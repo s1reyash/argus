@@ -35,4 +35,6 @@ This proves the listed invariants in this environment. Docker execution, scanner
 
 ## Standalone skill packaging — 2026-10-16
 
-Tested `skills@1.7.2 add <local skills/argus path> -a codex -y --copy` in an isolated project with installer telemetry disabled. Discovered and installed exactly one skill. All 10 installed files matched the source; 101 catalog areas and all local skill links verified. No engine, dependencies or fixture files were installed. This verifies packaging, not host model behavior. The Python skill validator was unavailable in this shell because PyYAML was missing; installer discovery and explicit payload checks succeeded.
+Tested `skills@1.7.2 add <local skills/argus path> -a codex -y --copy` in an isolated project with installer telemetry disabled. Discovered and installed exactly one skill. All 10 installed files matched the source; 101 catalog areas and all local skill links verified. No engine, dependencies or fixture files were installed. This verifies packaging, not host model behavior. The skill-creator validator passed using the validation virtual environment. Package validation also passed with 101 areas and zero broken-link or catalog-drift errors.
+
+Public GitHub URL installation also succeeded with `skills@1.7.2` in a fresh project. Exactly one skill and 10 payload files were installed, byte-for-byte identical to `skills/argus`.
