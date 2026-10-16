@@ -1,0 +1,3784 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "0.1.0-draft",
+  "areas": [
+    {
+      "id": "ARG-001",
+      "number": 1,
+      "title": "Feature completeness",
+      "group": "functional",
+      "signals": [
+        "requirement",
+        "roadmap",
+        "TODO",
+        "placeholder"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to feature completeness. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A promised export or account-management feature is absent or a placeholder."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A promised export or account-management feature is absent or a placeholder.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Every confirmed requirement maps to implemented behavior or a reported gap.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Implement the missing acceptance criteria; keep optional ideas separate from requirements.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Every confirmed requirement maps to implemented behavior or a reported gap. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-002",
+      "number": 2,
+      "title": "Complete user journeys",
+      "group": "functional",
+      "signals": [
+        "onboarding",
+        "checkout",
+        "workflow"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to complete user journeys. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Signup succeeds but onboarding or purchased access fails."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Signup succeeds but onboarding or purchased access fails.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "A user can complete each documented critical journey end to end.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Repair the first broken transition and add a journey regression test.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: A user can complete each documented critical journey end to end. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-003",
+      "number": 3,
+      "title": "Startup and configuration",
+      "group": "functional",
+      "signals": [
+        "config",
+        "environment",
+        "process.env",
+        "settings"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to startup and configuration. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A missing environment variable crashes startup or selects the wrong backend."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A missing environment variable crashes startup or selects the wrong backend.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Required configuration is validated before serving traffic with actionable errors.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate configuration centrally and fail safely on missing or conflicting values.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Required configuration is validated before serving traffic with actionable errors. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V13"
+      ]
+    },
+    {
+      "id": "ARG-004",
+      "number": 4,
+      "title": "URLs and routing",
+      "group": "functional",
+      "signals": [
+        "route",
+        "router",
+        "page",
+        "href"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to urls and routing. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Refreshing a nested URL returns a 404 or the wrong screen."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Refreshing a nested URL returns a 404 or the wrong screen.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Supported direct URLs, refreshes and unknown routes behave as specified.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Correct route registration, deployment rewrites and not-found handling.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Supported direct URLs, refreshes and unknown routes behave as specified. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-005",
+      "number": 5,
+      "title": "Buttons, navigation, and commands",
+      "group": "functional",
+      "signals": [
+        "button",
+        "onClick",
+        "command",
+        "click"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to buttons, navigation, and commands. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An action reports success without performing its operation."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An action reports success without performing its operation.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Each visible action or CLI command performs its documented effect.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Connect handlers to real operations and assert their effects, not only clicks.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Each visible action or CLI command performs its documented effect. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-006",
+      "number": 6,
+      "title": "Forms and input validation",
+      "group": "functional",
+      "signals": [
+        "form",
+        "input",
+        "validate",
+        "schema"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to forms and input validation. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Client and server accept different invalid values."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Client and server accept different invalid values.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Client feedback and authoritative server validation enforce the same contract.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Centralize schemas where practical and validate on the server regardless of client checks.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Client feedback and authoritative server validation enforce the same contract. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-007",
+      "number": 7,
+      "title": "Loading, empty, and success states",
+      "group": "functional",
+      "signals": [
+        "loading",
+        "spinner",
+        "empty",
+        "pending"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to loading, empty, and success states. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A spinner never ends or an error appears as success."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A spinner never ends or an error appears as success.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "All request outcomes lead to accurate usable interface states.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Handle pending, empty, success and failure explicitly and clear loading in all paths.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: All request outcomes lead to accurate usable interface states. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V16"
+      ]
+    },
+    {
+      "id": "ARG-008",
+      "number": 8,
+      "title": "Error recovery and user progress",
+      "group": "functional",
+      "signals": [
+        "retry",
+        "draft",
+        "recover",
+        "error"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to error recovery and user progress. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Retrying erases entered data or repeats completed work."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Retrying erases entered data or repeats completed work.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Recoverable failures preserve safe user progress without duplicate effects.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Persist drafts appropriately and make retries idempotent.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Recoverable failures preserve safe user progress without duplicate effects. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V16"
+      ]
+    },
+    {
+      "id": "ARG-009",
+      "number": 9,
+      "title": "Search, filtering, and sorting",
+      "group": "functional",
+      "signals": [
+        "search",
+        "filter",
+        "sort"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to search, filtering, and sorting. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Search misses matching records or sorts numbers as strings."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Search misses matching records or sorts numbers as strings.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Results and ordering match the documented query and access rules.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Fix query normalization, typed sorting and permission filtering.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Results and ordering match the documented query and access rules. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-010",
+      "number": 10,
+      "title": "Pagination and large collections",
+      "group": "functional",
+      "signals": [
+        "pagination",
+        "cursor",
+        "offset",
+        "pageSize"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to pagination and large collections. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Records repeat or disappear between pages."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Records repeat or disappear between pages.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Pagination visits the intended records without gaps or duplicates.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use stable ordering and consistent cursor semantics under concurrent updates.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Pagination visits the intended records without gaps or duplicates. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-011",
+      "number": 11,
+      "title": "Upload functionality",
+      "group": "functional",
+      "signals": [
+        "upload",
+        "multipart",
+        "attachment"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to upload functionality. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Interrupted uploads leave partial files indefinitely."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Interrupted uploads leave partial files indefinitely.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Valid uploads finish; rejected or interrupted uploads clean up safely.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Bound sizes, expose progress and implement resumable or cleanup behavior.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Valid uploads finish; rejected or interrupted uploads clean up safely. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V5"
+      ]
+    },
+    {
+      "id": "ARG-012",
+      "number": 12,
+      "title": "Downloads and exports",
+      "group": "functional",
+      "signals": [
+        "download",
+        "export",
+        "csv",
+        "pdf"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to downloads and exports. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Exports are corrupt, incomplete or contain the wrong records."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Exports are corrupt, incomplete or contain the wrong records.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Exported content is valid, complete and authorized for the requesting user.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Stream validated exports with explicit encoding and correct access filters.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Exported content is valid, complete and authorized for the requesting user. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V5"
+      ]
+    },
+    {
+      "id": "ARG-013",
+      "number": 13,
+      "title": "Imports and bulk ingestion",
+      "group": "functional",
+      "signals": [
+        "import",
+        "ingest",
+        "csv",
+        "bulk"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to imports and bulk ingestion. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "One malformed row causes unexplained partial completion."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: One malformed row causes unexplained partial completion.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Malformed rows have clear outcomes and valid records preserve defined atomicity.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate before committing; report row-level errors and define rollback semantics.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Malformed rows have clear outcomes and valid records preserve defined atomicity. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-014",
+      "number": 14,
+      "title": "Reports and business calculations",
+      "group": "functional",
+      "signals": [
+        "report",
+        "dashboard",
+        "total",
+        "aggregate"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to reports and business calculations. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Dashboard totals disagree with source transactions."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Dashboard totals disagree with source transactions.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Calculations match independent expected results and include each record correctly.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Define calculation rules and test independently calculated fixtures.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Calculations match independent expected results and include each record correctly. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-015",
+      "number": 15,
+      "title": "Languages and regional formats",
+      "group": "functional",
+      "signals": [
+        "locale",
+        "i18n",
+        "translate",
+        "unicode"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to languages and regional formats. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Unicode or right-to-left text breaks the interface."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Unicode or right-to-left text breaks the interface.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Supported locales preserve content, layout and correct formatting.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use locale-aware formatting and test translations, text expansion and directionality.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Supported locales preserve content, layout and correct formatting. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-016",
+      "number": 16,
+      "title": "Dates, time zones, and calendars",
+      "group": "functional",
+      "signals": [
+        "timezone",
+        "calendar",
+        "schedule",
+        "date"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to dates, time zones, and calendars. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Daylight-saving or timezone conversion moves an appointment."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Daylight-saving or timezone conversion moves an appointment.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Dates, durations and recurrence obey explicit timezone rules.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Store instants and timezone intent separately and test ambiguous or missing local times.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Dates, durations and recurrence obey explicit timezone rules. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-017",
+      "number": 17,
+      "title": "Accessibility",
+      "group": "functional",
+      "signals": [
+        "aria",
+        "button",
+        "form",
+        "accessibility"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to accessibility. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A keyboard user cannot complete a form."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A keyboard user cannot complete a form.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Critical workflows have usable focus, labels, semantics and keyboard operation.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Repair semantic controls, focus management, labels and announced error feedback.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Critical workflows have usable focus, labels, semantics and keyboard operation. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-018",
+      "number": 18,
+      "title": "Browser, screen, and input compatibility",
+      "group": "functional",
+      "signals": [
+        "viewport",
+        "css",
+        "media",
+        "webview"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to browser, screen, and input compatibility. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Checkout breaks on a supported small screen or input method."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Checkout breaks on a supported small screen or input method.",
+        "Trace the documented behavior from entrypoint to persisted effect.",
+        "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+        "Compare actual UI/API effects to independently specified acceptance criteria."
+      ],
+      "expectedOutcome": "Supported environments complete required workflows without hidden controls.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Fix responsive behavior and test the declared browser and input matrix.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Supported environments complete required workflows without hidden controls. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-019",
+      "number": 19,
+      "title": "Registration and invitations",
+      "group": "identity",
+      "signals": [
+        "register",
+        "signup",
+        "invite"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to registration and invitations. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An invitation enrolls a user in the wrong organization."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An invitation enrolls a user in the wrong organization.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Registration and invitation consumption preserve identity and organization boundaries.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Bind invitations to intended context, expiry and single-use consumption.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Registration and invitation consumption preserve identity and organization boundaries. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V6"
+      ]
+    },
+    {
+      "id": "ARG-020",
+      "number": 20,
+      "title": "Login correctness",
+      "group": "identity",
+      "signals": [
+        "login",
+        "signin",
+        "authenticate"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to login correctness. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Incorrect credentials grant access or valid users are rejected."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Incorrect credentials grant access or valid users are rejected.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Valid identities succeed and invalid credentials fail without revealing sensitive details.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Repair credential verification and add positive and negative authentication tests.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Valid identities succeed and invalid credentials fail without revealing sensitive details. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V6"
+      ]
+    },
+    {
+      "id": "ARG-021",
+      "number": 21,
+      "title": "Password handling",
+      "group": "identity",
+      "signals": [
+        "password",
+        "passwd",
+        "bcrypt",
+        "argon"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to password handling. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Passwords are stored in plaintext or exposed during changes."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Passwords are stored in plaintext or exposed during changes.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Passwords use appropriate one-way storage and never appear in outputs.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use maintained password-hashing libraries and remove plaintext persistence and logging.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Passwords use appropriate one-way storage and never appear in outputs. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V6",
+        "ASVS-v5.0.0/V11"
+      ]
+    },
+    {
+      "id": "ARG-022",
+      "number": 22,
+      "title": "Account recovery",
+      "group": "identity",
+      "signals": [
+        "reset",
+        "recovery",
+        "forgot"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to account recovery. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Expired or reused reset tokens remain valid."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Expired or reused reset tokens remain valid.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Recovery tokens expire, are single use and affect only the intended account.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Bind tokens to the account and operation, expire them and revoke after consumption.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Recovery tokens expire, are single use and affect only the intended account. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V6"
+      ]
+    },
+    {
+      "id": "ARG-023",
+      "number": 23,
+      "title": "MFA and passkeys",
+      "group": "identity",
+      "signals": [
+        "mfa",
+        "totp",
+        "passkey",
+        "webauthn"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to mfa and passkeys. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A backup route bypasses required verification."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A backup route bypasses required verification.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Every relevant login and recovery route enforces the required assurance level.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Close bypass paths, revoke authenticators correctly and protect recovery codes.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Every relevant login and recovery route enforces the required assurance level. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V6"
+      ]
+    },
+    {
+      "id": "ARG-024",
+      "number": 24,
+      "title": "OAuth, SSO, and account linking",
+      "group": "identity",
+      "signals": [
+        "oauth",
+        "oidc",
+        "sso",
+        "saml"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to oauth, sso, and account linking. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An invalid callback links the wrong identity."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An invalid callback links the wrong identity.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Identity callbacks and linking bind to the initiating session and verified identity.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate state, issuer, audience and redirect bindings using the provider's current guidance.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Identity callbacks and linking bind to the initiating session and verified identity. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V10"
+      ]
+    },
+    {
+      "id": "ARG-025",
+      "number": 25,
+      "title": "Sessions, cookies, and tokens",
+      "group": "identity",
+      "signals": [
+        "session",
+        "cookie",
+        "jwt",
+        "token"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to sessions, cookies, and tokens. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Expired tokens work or cookies lack required protections."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Expired tokens work or cookies lack required protections.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Session lifetime, token validation and cookie protections match the threat model.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate token claims and configure secure session transport, scope and expiry.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Session lifetime, token validation and cookie protections match the threat model. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V7",
+        "ASVS-v5.0.0/V9"
+      ]
+    },
+    {
+      "id": "ARG-026",
+      "number": 26,
+      "title": "Logout and access revocation",
+      "group": "identity",
+      "signals": [
+        "logout",
+        "revoke",
+        "suspend",
+        "session"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to logout and access revocation. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A suspended user keeps access through an old session."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A suspended user keeps access through an old session.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Logout and privilege revocation invalidate the intended active access.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Invalidate server-side state or use bounded token lifetimes with revocation handling.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Logout and privilege revocation invalidate the intended active access. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V7"
+      ]
+    },
+    {
+      "id": "ARG-027",
+      "number": 27,
+      "title": "Record-level authorization",
+      "group": "identity",
+      "signals": [
+        "owner",
+        "userId",
+        "authorize",
+        "permission"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to record-level authorization. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Changing an ID exposes another user's record."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Changing an ID exposes another user's record.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Every record operation verifies the current actor's rights.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Enforce authorization on server-side reads and writes, not only in the UI.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Every record operation verifies the current actor's rights. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V8"
+      ]
+    },
+    {
+      "id": "ARG-028",
+      "number": 28,
+      "title": "Roles and privileged actions",
+      "group": "identity",
+      "signals": [
+        "role",
+        "admin",
+        "permission",
+        "authorize"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to roles and privileged actions. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A regular user invokes an administrator endpoint."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A regular user invokes an administrator endpoint.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Privileged actions require the appropriate role at execution time.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Centralize permission checks and test direct API access for every role.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Privileged actions require the appropriate role at execution time. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V8"
+      ]
+    },
+    {
+      "id": "ARG-029",
+      "number": 29,
+      "title": "Tenant and organization isolation",
+      "group": "identity",
+      "signals": [
+        "tenant",
+        "organization",
+        "workspace",
+        "orgId"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to tenant and organization isolation. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An export exposes another organization's data."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An export exposes another organization's data.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "All data paths bind to the active authorized tenant.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Scope queries, cache keys, queues and exports by validated tenant context.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: All data paths bind to the active authorized tenant. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V8"
+      ]
+    },
+    {
+      "id": "ARG-030",
+      "number": 30,
+      "title": "Authentication abuse defenses",
+      "group": "identity",
+      "signals": [
+        "login",
+        "reset",
+        "rateLimit",
+        "captcha"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to authentication abuse defenses. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Repeated login or recovery attempts face no controls."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Repeated login or recovery attempts face no controls.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Abusive attempts are bounded without exposing account existence.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Add risk-appropriate throttling, safe errors and monitoring without locking out legitimate users indiscriminately.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Abusive attempts are bounded without exposing account existence. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V6"
+      ]
+    },
+    {
+      "id": "ARG-031",
+      "number": 31,
+      "title": "Sensitive-data protection",
+      "group": "identity",
+      "signals": [
+        "private",
+        "personal",
+        "encrypt",
+        "pii"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to sensitive-data protection. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Private values are exposed in storage or excessive response fields."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Private values are exposed in storage or excessive response fields.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Sensitive data is protected at rest and minimized in responses.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Apply appropriate encryption and explicit response projections; remove unnecessary collection.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Sensitive data is protected at rest and minimized in responses. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V11",
+        "ASVS-v5.0.0/V14"
+      ]
+    },
+    {
+      "id": "ARG-032",
+      "number": 32,
+      "title": "Retention, deletion, and privacy lifecycle",
+      "group": "identity",
+      "signals": [
+        "delete",
+        "retention",
+        "privacy",
+        "erase"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to retention, deletion, and privacy lifecycle. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Deleted data remains accessible in caches or downstream systems."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Deleted data remains accessible in caches or downstream systems.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Deletion and retention fulfill documented obligations across data copies.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Implement lifecycle propagation with auditable completion and documented backup retention.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Deletion and retention fulfill documented obligations across data copies. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V14"
+      ]
+    },
+    {
+      "id": "ARG-033",
+      "number": 33,
+      "title": "Secrets and credential exposure",
+      "group": "identity",
+      "signals": [
+        "secret",
+        "api_key",
+        "apikey",
+        "token"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to secrets and credential exposure. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Credentials appear in source, bundles, logs or reports."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Credentials appear in source, bundles, logs or reports.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Secrets are not exposed in artifacts or unprivileged interfaces.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Remove exposed values, rotate affected credentials and prevent their reintroduction.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Secrets are not exposed in artifacts or unprivileged interfaces. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V11",
+        "ASVS-v5.0.0/V14"
+      ]
+    },
+    {
+      "id": "ARG-034",
+      "number": 34,
+      "title": "Transport and certificate security",
+      "group": "identity",
+      "signals": [
+        "https",
+        "tls",
+        "ssl",
+        "certificate"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to transport and certificate security. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Sensitive traffic uses plaintext or accepts invalid certificates."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Sensitive traffic uses plaintext or accepts invalid certificates.",
+        "Use distinct synthetic identities, roles and tenants.",
+        "Exercise both the supported flow and direct access to the protected operation.",
+        "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+      ],
+      "expectedOutcome": "Protected communication verifies endpoint identity and uses secure transport.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Enforce TLS and certificate verification without bypass flags.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Protected communication verifies endpoint identity and uses secure transport. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V12"
+      ]
+    },
+    {
+      "id": "ARG-035",
+      "number": 35,
+      "title": "Missing fields and schema completeness",
+      "group": "data",
+      "signals": [
+        "schema",
+        "required",
+        "nullable",
+        "null"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to missing fields and schema completeness. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Missing required fields or unexpected nulls crash a workflow."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Missing required fields or unexpected nulls crash a workflow.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Absent, null and present values have explicit validated behavior.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Define required fields, defaults and nullability at API and persistence boundaries.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Absent, null and present values have explicit validated behavior. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-036",
+      "number": 36,
+      "title": "Data types and value boundaries",
+      "group": "data",
+      "signals": [
+        "schema",
+        "validate",
+        "quantity",
+        "number"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to data types and value boundaries. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Negative quantities or wrong types bypass validation."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Negative quantities or wrong types bypass validation.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Inputs remain within documented types, ranges and sizes.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate types and limits before processing and enforce essential storage constraints.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Inputs remain within documented types, ranges and sizes. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-037",
+      "number": 37,
+      "title": "Empty and insufficient datasets",
+      "group": "data",
+      "signals": [
+        "dataset",
+        "records",
+        "rows",
+        "aggregate"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to empty and insufficient datasets. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Empty data causes division by zero or unjustified conclusions."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Empty data causes division by zero or unjustified conclusions.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Empty or sparse data produces honest, usable results.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Add minimum-data checks, empty states and statistical sufficiency rules where relevant.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Empty or sparse data produces honest, usable results. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-038",
+      "number": 38,
+      "title": "Relationships and referential integrity",
+      "group": "data",
+      "signals": [
+        "foreign",
+        "relation",
+        "belongsTo",
+        "references"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to relationships and referential integrity. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An order references a missing customer."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An order references a missing customer.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Required relationships remain consistent after create, update and delete.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use database constraints and explicit deletion or archival rules.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Required relationships remain consistent after create, update and delete. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-039",
+      "number": 39,
+      "title": "Persistence and durability",
+      "group": "data",
+      "signals": [
+        "save",
+        "persist",
+        "storage",
+        "database"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to persistence and durability. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A saved change disappears after restart."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A saved change disappears after restart.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Acknowledged writes survive the promised restart or failure boundary.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Acknowledge only durable writes and verify restart recovery on an isolated copy.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Acknowledged writes survive the promised restart or failure boundary. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V15"
+      ]
+    },
+    {
+      "id": "ARG-040",
+      "number": 40,
+      "title": "Transactions and partial writes",
+      "group": "data",
+      "signals": [
+        "transaction",
+        "commit",
+        "rollback"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to transactions and partial writes. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Related writes only partially commit."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Related writes only partially commit.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Multi-step changes meet the documented atomicity requirements.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use transactions or explicit compensating actions and test failure between writes.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Multi-step changes meet the documented atomicity requirements. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-041",
+      "number": 41,
+      "title": "Concurrent modifications",
+      "group": "data",
+      "signals": [
+        "update",
+        "version",
+        "lock",
+        "concurrent"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to concurrent modifications. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Two edits overwrite one another silently."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Two edits overwrite one another silently.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Concurrent changes preserve invariants or surface a resolvable conflict.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use suitable locking, version checks or conflict-resolution rules.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Concurrent changes preserve invariants or surface a resolvable conflict. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-042",
+      "number": 42,
+      "title": "Operation idempotency",
+      "group": "data",
+      "signals": [
+        "idempotency",
+        "submit",
+        "create",
+        "retry"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to operation idempotency. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Repeated requests create duplicate business objects."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Repeated requests create duplicate business objects.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Repeated operation identifiers cause at most the intended effect.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Persist idempotency decisions atomically with the operation.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Repeated operation identifiers cause at most the intended effect. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-043",
+      "number": 43,
+      "title": "Numeric precision and units",
+      "group": "data",
+      "signals": [
+        "amount",
+        "price",
+        "decimal",
+        "unit"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to numeric precision and units. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Rounding or unit conversion changes balances."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Rounding or unit conversion changes balances.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Financial and measured values preserve specified precision and units.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use suitable decimal or integer representations and explicit conversion rules.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Financial and measured values preserve specified precision and units. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-044",
+      "number": 44,
+      "title": "Encoding and serialization",
+      "group": "data",
+      "signals": [
+        "json",
+        "serialize",
+        "encoding",
+        "buffer"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to encoding and serialization. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Large IDs or Unicode change in transit."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Large IDs or Unicode change in transit.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Round trips preserve the required meaning and precision.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Choose lossless encodings and test boundary values across languages and interfaces.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Round trips preserve the required meaning and precision. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-045",
+      "number": 45,
+      "title": "Schema migrations",
+      "group": "data",
+      "signals": [
+        "migration",
+        "alter",
+        "prisma",
+        "alembic"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to schema migrations. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An upgrade drops records or leaves incompatible data."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An upgrade drops records or leaves incompatible data.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Migrations preserve required data and have tested recovery behavior.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use staged compatible migrations and validate on disposable representative datasets.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Migrations preserve required data and have tested recovery behavior. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V15"
+      ]
+    },
+    {
+      "id": "ARG-046",
+      "number": 46,
+      "title": "Database connectivity and connection pools",
+      "group": "data",
+      "signals": [
+        "pool",
+        "connect",
+        "database",
+        "connection"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to database connectivity and connection pools. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Leaked connections exhaust the database pool."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Leaked connections exhaust the database pool.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Connections are bounded, released and fail with controlled timeouts.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Manage connection lifetimes and apply pool limits and acquisition timeouts.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Connections are bounded, released and fail with controlled timeouts. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-047",
+      "number": 47,
+      "title": "Database permissions and access policies",
+      "group": "data",
+      "signals": [
+        "policy",
+        "rls",
+        "grant",
+        "database"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to database permissions and access policies. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "The application identity accesses unauthorized records."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: The application identity accesses unauthorized records.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Database privileges enforce the intended minimum access.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Restrict grants and validate row-level policies with distinct synthetic roles.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Database privileges enforce the intended minimum access. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V8"
+      ]
+    },
+    {
+      "id": "ARG-048",
+      "number": 48,
+      "title": "Query performance",
+      "group": "data",
+      "signals": [
+        "query",
+        "index",
+        "select",
+        "findMany"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to query performance. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Missing indexes or repeated queries cause excessive latency."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Missing indexes or repeated queries cause excessive latency.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Representative queries remain within an explicit performance budget.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Inspect plans, add justified indexes and eliminate repeated or unbounded queries.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Representative queries remain within an explicit performance budget. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-049",
+      "number": 49,
+      "title": "Cache correctness and isolation",
+      "group": "data",
+      "signals": [
+        "cache",
+        "redis",
+        "etag",
+        "memo"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to cache correctness and isolation. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A user sees stale permissions or another user's cached data."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A user sees stale permissions or another user's cached data.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "Cache entries respect identity, freshness and invalidation requirements.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Include the correct scope in keys and invalidate security-sensitive entries promptly.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Cache entries respect identity, freshness and invalidation requirements. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V14"
+      ]
+    },
+    {
+      "id": "ARG-050",
+      "number": 50,
+      "title": "Backup and restoration",
+      "group": "data",
+      "signals": [
+        "backup",
+        "restore",
+        "snapshot"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to backup and restoration. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A backup cannot restore a consistent working app."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A backup cannot restore a consistent working app.",
+        "Use absent, null, malformed, boundary and representative datasets.",
+        "Inject a controlled failure or concurrent operation in an isolated fixture.",
+        "Verify state and invariants after completion, restart or rollback."
+      ],
+      "expectedOutcome": "An isolated restore recovers the required data and service behavior.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Test restoration regularly and define recovery objectives with verified procedures.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: An isolated restore recovers the required data and service behavior. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-051",
+      "number": 51,
+      "title": "API contracts and version compatibility",
+      "group": "security",
+      "signals": [
+        "api",
+        "openapi",
+        "graphql",
+        "endpoint"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to api contracts and version compatibility. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A changed response breaks an existing client."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A changed response breaks an existing client.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Supported clients and servers agree on the declared contract.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Version breaking changes and add consumer/server contract tests.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Supported clients and servers agree on the declared contract. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V4"
+      ]
+    },
+    {
+      "id": "ARG-052",
+      "number": 52,
+      "title": "API error semantics",
+      "group": "security",
+      "signals": [
+        "status",
+        "res.status",
+        "error",
+        "response"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to api error semantics. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An API returns success for a failed operation."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An API returns success for a failed operation.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Status and error bodies accurately describe outcomes without sensitive internals.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use consistent error contracts and sanitize internal exceptions.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Status and error bodies accurately describe outcomes without sensitive internals. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V16"
+      ]
+    },
+    {
+      "id": "ARG-053",
+      "number": 53,
+      "title": "API quotas and resource abuse",
+      "group": "security",
+      "signals": [
+        "limit",
+        "quota",
+        "graphql",
+        "pageSize"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to api quotas and resource abuse. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Unbounded requests exhaust service capacity."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Unbounded requests exhaust service capacity.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Request cost, size and concurrency stay within defined limits.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Bound expensive operations and apply suitable per-actor quotas.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Request cost, size and concurrency stay within defined limits. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V4"
+      ]
+    },
+    {
+      "id": "ARG-054",
+      "number": 54,
+      "title": "SQL and NoSQL injection",
+      "group": "security",
+      "signals": [
+        "query",
+        "sql",
+        "mongo",
+        "execute"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to sql and nosql injection. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "User input changes a database query's meaning."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: User input changes a database query's meaning.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Untrusted data cannot alter query structure.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use parameterized queries and constrained operators rather than string concatenation.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Untrusted data cannot alter query structure. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V1"
+      ]
+    },
+    {
+      "id": "ARG-055",
+      "number": 55,
+      "title": "Command and template injection",
+      "group": "security",
+      "signals": [
+        "exec",
+        "spawn",
+        "template",
+        "render"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to command and template injection. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A filename causes unintended shell or template execution."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A filename causes unintended shell or template execution.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Untrusted values remain data at execution boundaries.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Avoid shell interpolation; use argv and restricted template capabilities.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Untrusted values remain data at execution boundaries. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V1"
+      ]
+    },
+    {
+      "id": "ARG-056",
+      "number": 56,
+      "title": "Cross-site scripting",
+      "group": "security",
+      "signals": [
+        "innerHTML",
+        "dangerouslySetInnerHTML",
+        "html",
+        "script"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to cross-site scripting. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Stored content executes unintended browser script."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Stored content executes unintended browser script.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Untrusted content is rendered with context-appropriate protection.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Prefer safe text rendering and maintained context-aware sanitization when HTML is required.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Untrusted content is rendered with context-appropriate protection. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V1"
+      ]
+    },
+    {
+      "id": "ARG-057",
+      "number": 57,
+      "title": "Cross-site request forgery",
+      "group": "security",
+      "signals": [
+        "cookie",
+        "csrf",
+        "session",
+        "POST"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to cross-site request forgery. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An unrelated site triggers a sensitive session action."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An unrelated site triggers a sensitive session action.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "State changes require the intended request origin and anti-forgery controls.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Apply appropriate CSRF defenses and secure cookie settings.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: State changes require the intended request origin and anti-forgery controls. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V3"
+      ]
+    },
+    {
+      "id": "ARG-058",
+      "number": 58,
+      "title": "Cross-origin access rules",
+      "group": "security",
+      "signals": [
+        "cors",
+        "origin",
+        "Access-Control"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to cross-origin access rules. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An untrusted origin reads credentialed responses."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An untrusted origin reads credentialed responses.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Cross-origin access is limited to explicitly intended callers.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use precise origin rules and avoid reflecting arbitrary origins with credentials.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Cross-origin access is limited to explicitly intended callers. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V3"
+      ]
+    },
+    {
+      "id": "ARG-059",
+      "number": 59,
+      "title": "Server-side request forgery",
+      "group": "security",
+      "signals": [
+        "fetch",
+        "url",
+        "http",
+        "request"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to server-side request forgery. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A user URL reaches an unauthorized internal endpoint in a fixture."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A user URL reaches an unauthorized internal endpoint in a fixture.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Outbound destinations remain within authorized network boundaries.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate resolved destinations, redirects and protocols and enforce egress restrictions.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Outbound destinations remain within authorized network boundaries. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-060",
+      "number": 60,
+      "title": "Path traversal and filesystem boundaries",
+      "group": "security",
+      "signals": [
+        "path",
+        "readFile",
+        "extract",
+        "download"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to path traversal and filesystem boundaries. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A download or extraction escapes its allowed directory."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A download or extraction escapes its allowed directory.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Canonical paths stay inside approved roots including symlink handling.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Resolve and validate paths; reject traversal, unsafe links and archive escapes.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Canonical paths stay inside approved roots including symlink handling. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V5"
+      ]
+    },
+    {
+      "id": "ARG-061",
+      "number": 61,
+      "title": "Uploaded-content safety",
+      "group": "security",
+      "signals": [
+        "upload",
+        "mime",
+        "contentType",
+        "extension"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to uploaded-content safety. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A fake extension allows active content to be served."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A fake extension allows active content to be served.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Accepted files satisfy content, size and serving restrictions.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Inspect content, isolate uploads and serve them with safe headers and permissions.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Accepted files satisfy content, size and serving restrictions. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V5"
+      ]
+    },
+    {
+      "id": "ARG-062",
+      "number": 62,
+      "title": "Redirects and deep-link validation",
+      "group": "security",
+      "signals": [
+        "redirect",
+        "deeplink",
+        "returnUrl",
+        "callback"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to redirects and deep-link validation. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A link redirects to an untrusted destination or privileged action."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A link redirects to an untrusted destination or privileged action.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Redirects and deep links allow only documented destinations and actions.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate destinations and recheck authorization after deep-link entry.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Redirects and deep links allow only documented destinations and actions. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V3"
+      ]
+    },
+    {
+      "id": "ARG-063",
+      "number": 63,
+      "title": "Webhook authenticity",
+      "group": "security",
+      "signals": [
+        "webhook",
+        "signature",
+        "hmac"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to webhook authenticity. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "A forged callback changes account or payment status."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A forged callback changes account or payment status.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Callbacks are authenticated before any state change.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Verify provider signatures over the correct raw payload and protect verification secrets.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Callbacks are authenticated before any state change. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V4",
+        "ASVS-v5.0.0/V11"
+      ]
+    },
+    {
+      "id": "ARG-064",
+      "number": 64,
+      "title": "Webhook replay and event ordering",
+      "group": "security",
+      "signals": [
+        "webhook",
+        "eventId",
+        "event_type"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to webhook replay and event ordering. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "An old or duplicate event overwrites a newer state."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An old or duplicate event overwrites a newer state.",
+        "Trace attacker-controlled input across the trust boundary.",
+        "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+        "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+      ],
+      "expectedOutcome": "Duplicate and out-of-order events preserve valid state transitions.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Deduplicate events and enforce a versioned transition model.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Duplicate and out-of-order events preserve valid state transitions. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V4"
+      ]
+    },
+    {
+      "id": "ARG-065",
+      "number": 65,
+      "title": "Third-party failures and timeouts",
+      "group": "integration",
+      "signals": [
+        "fetch",
+        "axios",
+        "provider",
+        "integration"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to third-party failures and timeouts. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "One unavailable provider blocks unrelated functions."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: One unavailable provider blocks unrelated functions.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Provider failures terminate within bounded time and degrade only intended features.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Apply timeouts, isolation and meaningful fallback behavior.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Provider failures terminate within bounded time and degrade only intended features. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V15"
+      ]
+    },
+    {
+      "id": "ARG-066",
+      "number": 66,
+      "title": "Retry and circuit-breaker behavior",
+      "group": "integration",
+      "signals": [
+        "retry",
+        "backoff",
+        "circuit"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to retry and circuit-breaker behavior. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "Retries amplify an outage or repeat irreversible effects."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Retries amplify an outage or repeat irreversible effects.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Retries are bounded, appropriate and safe for the operation.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use capped backoff with jitter, idempotency and circuit breaking where useful.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Retries are bounded, appropriate and safe for the operation. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V15"
+      ]
+    },
+    {
+      "id": "ARG-067",
+      "number": 67,
+      "title": "Chat sending and receiving",
+      "group": "integration",
+      "signals": [
+        "chat",
+        "message",
+        "conversation"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to chat sending and receiving. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "A message appears sent but never reaches the other test user."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A message appears sent but never reaches the other test user.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Authorized isolated test users exchange messages with accurate state.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Trace message persistence, fanout and acknowledgement and fix the first failed boundary.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Authorized isolated test users exchange messages with accurate state. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-068",
+      "number": 68,
+      "title": "Chat history and ordering",
+      "group": "integration",
+      "signals": [
+        "chat",
+        "history",
+        "conversation"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to chat history and ordering. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "Reconnect loses history or duplicates messages."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Reconnect loses history or duplicates messages.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "History and sequence remain consistent through reconnect and pagination.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use stable message identifiers and reconciliation with server state.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: History and sequence remain consistent through reconnect and pagination. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-069",
+      "number": 69,
+      "title": "Realtime connection lifecycle",
+      "group": "integration",
+      "signals": [
+        "websocket",
+        "socket.io",
+        "realtime",
+        "sse"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to realtime connection lifecycle. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "A dropped socket still appears connected."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A dropped socket still appears connected.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Connection state, reconnect and authorization reflect actual transport state.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Handle disconnects, bounded reconnect and resubscription with renewed authorization.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Connection state, reconnect and authorization reflect actual transport state. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-070",
+      "number": 70,
+      "title": "Chat media and attachments",
+      "group": "integration",
+      "signals": [
+        "chat",
+        "attachment",
+        "conversation"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to chat media and attachments. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "Attachments are inaccessible to recipients or visible to outsiders."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Attachments are inaccessible to recipients or visible to outsiders.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Only intended participants access valid attachments.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Bind attachment access to conversation authorization and handle incomplete uploads.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Only intended participants access valid attachments. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V8"
+      ]
+    },
+    {
+      "id": "ARG-071",
+      "number": 71,
+      "title": "WhatsApp integration",
+      "group": "integration",
+      "signals": [
+        "whatsapp",
+        "wamid"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to whatsapp integration. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "A simulated template rejection is displayed as delivered."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A simulated template rejection is displayed as delivered.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Provider simulations produce correct WhatsApp workflow state and failure feedback.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Map provider responses and webhook states explicitly; keep real delivery unverified.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Provider simulations produce correct WhatsApp workflow state and failure feedback. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-072",
+      "number": 72,
+      "title": "Email integration",
+      "group": "integration",
+      "signals": [
+        "email",
+        "smtp",
+        "sendgrid",
+        "resend"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to email integration. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "A simulated bounce is marked delivered."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A simulated bounce is marked delivered.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Email queues and simulated provider events produce accurate application state.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Separate queued, accepted, delivered and failure states with bounded retry rules.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Email queues and simulated provider events produce accurate application state. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-073",
+      "number": 73,
+      "title": "SMS and OTP delivery workflows",
+      "group": "integration",
+      "signals": [
+        "sms",
+        "otp",
+        "twilio"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to sms and otp delivery workflows. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "A delayed simulated OTP remains usable after expiry."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A delayed simulated OTP remains usable after expiry.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Delivery retries do not extend or conflict with authentication token validity.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Bind OTP expiry to issuance and handle delayed or failed sends independently.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Delivery retries do not extend or conflict with authentication token validity. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V6"
+      ]
+    },
+    {
+      "id": "ARG-074",
+      "number": 74,
+      "title": "Push notifications",
+      "group": "integration",
+      "signals": [
+        "push",
+        "fcm",
+        "apns",
+        "deviceToken"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to push notifications. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "Invalid device tokens crash processing or target the wrong account."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Invalid device tokens crash processing or target the wrong account.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Simulated push failures are isolated and device tokens belong to the correct user.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Revoke invalid tokens and validate ownership and platform response handling.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Simulated push failures are isolated and device tokens belong to the correct user. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-075",
+      "number": 75,
+      "title": "Message queues and dead-letter handling",
+      "group": "integration",
+      "signals": [
+        "queue",
+        "worker",
+        "deadletter",
+        "rabbit"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to message queues and dead-letter handling. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "One invalid message blocks a queue or silently vanishes."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: One invalid message blocks a queue or silently vanishes.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Poison messages are bounded, observable and recoverable without blocking valid work.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Limit attempts and provide dead-letter inspection and controlled replay.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Poison messages are bounded, observable and recoverable without blocking valid work. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-076",
+      "number": 76,
+      "title": "Notification preferences and consent",
+      "group": "integration",
+      "signals": [
+        "unsubscribe",
+        "consent",
+        "notification",
+        "marketing"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to notification preferences and consent. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "An unsubscribed user enters a simulated marketing send."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An unsubscribed user enters a simulated marketing send.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Applicable communication preferences are enforced at send time.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Check current preferences in the send path and process unsubscribe changes reliably.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Applicable communication preferences are enforced at send time. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-077",
+      "number": 77,
+      "title": "Checkout prices and totals",
+      "group": "integration",
+      "signals": [
+        "checkout",
+        "price",
+        "currency",
+        "discount"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to checkout prices and totals. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "Client changes alter the authoritative payable amount."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Client changes alter the authoritative payable amount.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "The server calculates and validates prices, taxes and discounts.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Recalculate totals from trusted server data and bind them to payment intent.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: The server calculates and validates prices, taxes and discounts. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-078",
+      "number": 78,
+      "title": "Payment state transitions",
+      "group": "integration",
+      "signals": [
+        "payment",
+        "charge",
+        "checkout"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to payment state transitions. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "A failed simulated payment grants access."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A failed simulated payment grants access.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Only valid authoritative payment transitions grant entitlements.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Implement an explicit payment state machine and verify trusted completion events.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Only valid authoritative payment transitions grant entitlements. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-079",
+      "number": 79,
+      "title": "Duplicate-charge prevention",
+      "group": "integration",
+      "signals": [
+        "payment",
+        "idempotency",
+        "charge"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to duplicate-charge prevention. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "Timeout retries create two simulated charges."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Timeout retries create two simulated charges.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Repeated attempts produce at most the intended charge.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Reuse provider idempotency keys and persist operation identity across retries.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Repeated attempts produce at most the intended charge. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-080",
+      "number": 80,
+      "title": "Refunds and cancellations",
+      "group": "integration",
+      "signals": [
+        "refund",
+        "cancel",
+        "chargeback"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to refunds and cancellations. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "Refunds leave inventory or access inconsistent."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Refunds leave inventory or access inconsistent.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Refund and cancellation workflows update all required business state.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Define compensations and reconcile money, orders, inventory and access.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Refund and cancellation workflows update all required business state. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-081",
+      "number": 81,
+      "title": "Subscription lifecycle",
+      "group": "integration",
+      "signals": [
+        "subscription",
+        "renewal",
+        "plan"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to subscription lifecycle. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "An expired subscription retains paid privileges."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An expired subscription retains paid privileges.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Entitlements match valid renewal, cancellation and plan transitions.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Derive access from authoritative subscription state with explicit grace rules.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Entitlements match valid renewal, cancellation and plan transitions. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-082",
+      "number": 82,
+      "title": "Payment reconciliation",
+      "group": "integration",
+      "signals": [
+        "payment",
+        "reconcile",
+        "settlement"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to payment reconciliation. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks",
+        "A simulated provider; external delivery must remain blocked"
+      ],
+      "failureExamples": [
+        "Provider success remains permanently pending internally."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Provider success remains permanently pending internally.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Reconciliation detects and resolves inconsistent simulated payment records.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Implement idempotent reconciliation using authoritative events and stable identifiers.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Reconciliation detects and resolves inconsistent simulated payment records. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-083",
+      "number": 83,
+      "title": "Inventory and reservations",
+      "group": "integration",
+      "signals": [
+        "inventory",
+        "stock",
+        "reservation"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to inventory and reservations. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Concurrent orders oversell stock."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Concurrent orders oversell stock.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Reservations and purchases preserve available inventory constraints.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use atomic capacity updates and reliably expire unused reservations.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Reservations and purchases preserve available inventory constraints. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-084",
+      "number": 84,
+      "title": "Business rules and workflow transitions",
+      "group": "integration",
+      "signals": [
+        "approval",
+        "workflow",
+        "stateMachine",
+        "status"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to business rules and workflow transitions. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A user bypasses required approval or approves their own request."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A user bypasses required approval or approves their own request.",
+        "Replace external providers with local fixtures; deny all external delivery.",
+        "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+        "Assert persisted state and visible feedback; real delivery remains unverified."
+      ],
+      "expectedOutcome": "Transitions obey documented business and separation-of-duty rules.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Enforce business invariants centrally and test forbidden transitions.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Transitions obey documented business and separation-of-duty rules. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V2"
+      ]
+    },
+    {
+      "id": "ARG-085",
+      "number": 85,
+      "title": "Dependencies and supply-chain exposure",
+      "group": "operations",
+      "signals": [
+        "package.json",
+        "lock",
+        "requirements",
+        "Cargo"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to dependencies and supply-chain exposure. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A vulnerable dependency or unsafe install script introduces risk."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A vulnerable dependency or unsafe install script introduces risk.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Dependency provenance and known vulnerability results are reviewed with current evidence.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Update or mitigate affected packages, pin dependencies and review installation behavior.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Dependency provenance and known vulnerability results are reviewed with current evidence. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V13"
+      ]
+    },
+    {
+      "id": "ARG-086",
+      "number": 86,
+      "title": "Builds and deployment configuration",
+      "group": "operations",
+      "signals": [
+        "build",
+        "deploy",
+        "Dockerfile",
+        "vite"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to builds and deployment configuration. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Production builds omit assets or expose debug settings."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Production builds omit assets or expose debug settings.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "The intended production artifact builds and uses correct public configuration.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate production builds and distinguish public configuration from secrets.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: The intended production artifact builds and uses correct public configuration. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V13"
+      ]
+    },
+    {
+      "id": "ARG-087",
+      "number": 87,
+      "title": "Release and rollback compatibility",
+      "group": "operations",
+      "signals": [
+        "release",
+        "rollback",
+        "migration",
+        "deploy"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to release and rollback compatibility. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A rollback cannot read the current schema or queued work."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A rollback cannot read the current schema or queued work.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Supported rollout and rollback combinations preserve required service behavior.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use compatible staged releases and exercise rollback against representative state.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Supported rollout and rollback combinations preserve required service behavior. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-088",
+      "number": 88,
+      "title": "Load and capacity",
+      "group": "operations",
+      "signals": [
+        "server",
+        "request",
+        "worker",
+        "capacity"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to load and capacity. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Expected peak activity causes unacceptable latency or cost."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Expected peak activity causes unacceptable latency or cost.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Declared workload and cost budgets hold under bounded isolated load.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Measure bottlenecks, bound work and add capacity based on tested assumptions.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Declared workload and cost budgets hold under bounded isolated load. Include an authorized/valid control case.",
+      "references": [
+        "Google-SRE-monitoring"
+      ]
+    },
+    {
+      "id": "ARG-089",
+      "number": 89,
+      "title": "Resource exhaustion and leaks",
+      "group": "operations",
+      "signals": [
+        "memory",
+        "stream",
+        "pool",
+        "worker"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to resource exhaustion and leaks. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Memory, disk or handles are progressively exhausted."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Memory, disk or handles are progressively exhausted.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Resources are bounded and released on success, failure and cancellation.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Fix resource lifecycle leaks and add limits with observable failure behavior.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Resources are bounded and released on success, failure and cancellation. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V15",
+        "Google-SRE-monitoring"
+      ]
+    },
+    {
+      "id": "ARG-090",
+      "number": 90,
+      "title": "Health checks, logs, metrics, and alerts",
+      "group": "operations",
+      "signals": [
+        "health",
+        "logger",
+        "metric",
+        "alert"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to health checks, logs, metrics, and alerts. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Health remains green during a critical outage."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Health remains green during a critical outage.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Health and telemetry reveal actionable failures without exposing secrets.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Separate liveness/readiness and instrument critical dependencies and user journeys.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Health and telemetry reveal actionable failures without exposing secrets. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V16",
+        "Google-SRE-monitoring"
+      ]
+    },
+    {
+      "id": "ARG-091",
+      "number": 91,
+      "title": "Scheduled and background jobs",
+      "group": "operations",
+      "signals": [
+        "cron",
+        "schedule",
+        "job",
+        "worker"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to scheduled and background jobs. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A job silently stops or runs twice."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A job silently stops or runs twice.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Jobs execute with documented scheduling and duplicate-handling semantics.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Persist job state and implement overlap control, retries and failure visibility.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Jobs execute with documented scheduling and duplicate-handling semantics. Include an authorized/valid control case.",
+      "references": [
+        "Google-SRE-monitoring"
+      ]
+    },
+    {
+      "id": "ARG-092",
+      "number": 92,
+      "title": "Shutdown and crash recovery",
+      "group": "operations",
+      "signals": [
+        "shutdown",
+        "signal",
+        "restart",
+        "recover"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to shutdown and crash recovery. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Termination loses acknowledged work or prevents restart."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Termination loses acknowledged work or prevents restart.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Shutdown and restart preserve documented durability and recovery guarantees.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Drain safely, checkpoint durable work and verify interrupted-operation recovery.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Shutdown and restart preserve documented durability and recovery guarantees. Include an authorized/valid control case.",
+      "references": [
+        "Google-SRE-monitoring"
+      ]
+    },
+    {
+      "id": "ARG-093",
+      "number": 93,
+      "title": "Offline synchronization and conflicts",
+      "group": "operations",
+      "signals": [
+        "offline",
+        "sync",
+        "serviceWorker"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to offline synchronization and conflicts. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Reconnect overwrites newer data or duplicates actions."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Reconnect overwrites newer data or duplicates actions.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Synchronization preserves identity and resolves conflicts explicitly.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Use stable operation IDs, versioning and documented merge rules.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Synchronization preserves identity and resolves conflicts explicitly. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-094",
+      "number": 94,
+      "title": "Mobile permissions and local storage",
+      "group": "operations",
+      "signals": [
+        "AndroidManifest",
+        "Info.plist",
+        "mobile",
+        "react-native"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to mobile permissions and local storage. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Denied permissions crash the app or local backups expose tokens."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Denied permissions crash the app or local backups expose tokens.",
+        "For mobile targets, map secure storage to MASVS-STORAGE, permission/IPC boundaries to MASVS-PLATFORM, and permission minimization to MASVS-PRIVACY in version 2.1.0; select exact controls before making a control-level claim.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Permission denial is handled and local sensitive data uses appropriate platform protection.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Minimize permissions and use platform secure storage with controlled backup behavior.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Permission denial is handled and local sensitive data uses appropriate platform protection. Include an authorized/valid control case.",
+      "references": [
+        "MASVS-v2.1.0"
+      ]
+    },
+    {
+      "id": "ARG-095",
+      "number": 95,
+      "title": "Desktop IPC and native privileges",
+      "group": "operations",
+      "signals": [
+        "electron",
+        "ipc",
+        "tauri",
+        "desktop"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to desktop ipc and native privileges. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Renderer input invokes privileged native functions."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Renderer input invokes privileged native functions.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "IPC validates sender, operation and data before privileged effects.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Expose a minimal validated bridge and isolate untrusted renderer content.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: IPC validates sender, operation and data before privileged effects. Include an authorized/valid control case.",
+      "references": []
+    },
+    {
+      "id": "ARG-096",
+      "number": 96,
+      "title": "Installation, signing, and updates",
+      "group": "operations",
+      "signals": [
+        "installer",
+        "signature",
+        "updater",
+        "release"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to installation, signing, and updates. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "An untrusted update is accepted or installation cannot recover."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An untrusted update is accepted or installation cannot recover.",
+        "For mobile targets only, review MASVS-CODE and MASVS-RESILIENCE in version 2.1.0 when selecting signing/update tests; desktop installers require their own platform evidence.",
+        "Define an explicit workload, resource or recovery objective first.",
+        "Exercise a bounded failure on a disposable copy using available infrastructure.",
+        "Compare measured outcomes to the objective and verify cleanup and recovery."
+      ],
+      "expectedOutcome": "Artifacts are verified and interrupted updates preserve a recoverable installation.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate signatures and use atomic installation with tested recovery.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Artifacts are verified and interrupted updates preserve a recoverable installation. Include an authorized/valid control case.",
+      "references": [
+        "MASVS-v2.1.0"
+      ]
+    },
+    {
+      "id": "ARG-097",
+      "number": 97,
+      "title": "AI output handling and fallback",
+      "group": "ai",
+      "signals": [
+        "llm",
+        "openai",
+        "anthropic",
+        "model"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to ai output handling and fallback. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Invalid model output crashes a workflow or an outage traps users."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Invalid model output crashes a workflow or an outage traps users.",
+        "Use synthetic protected data and adversarial untrusted content.",
+        "Observe actual authorization and output boundaries rather than model promises.",
+        "Record uncertainty, provenance and unavailable execution evidence."
+      ],
+      "expectedOutcome": "Model output is validated and unavailable models have explicit failure behavior.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Validate structured outputs, bound resource usage and implement task-appropriate fallback.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Model output is validated and unavailable models have explicit failure behavior. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V15"
+      ]
+    },
+    {
+      "id": "ARG-098",
+      "number": 98,
+      "title": "AI prompt injection",
+      "group": "ai",
+      "signals": [
+        "prompt",
+        "agent",
+        "llm",
+        "tool"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to ai prompt injection. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Uploaded instructions attempt to expose protected data."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Uploaded instructions attempt to expose protected data.",
+        "Use synthetic protected data and adversarial untrusted content.",
+        "Observe actual authorization and output boundaries rather than model promises.",
+        "Record uncertainty, provenance and unavailable execution evidence."
+      ],
+      "expectedOutcome": "Untrusted content cannot redefine authority or trigger unauthorized actions.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Separate instructions from data and enforce tool/data boundaries outside model text.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Untrusted content cannot redefine authority or trigger unauthorized actions. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V15"
+      ]
+    },
+    {
+      "id": "ARG-099",
+      "number": 99,
+      "title": "AI retrieval and knowledge isolation",
+      "group": "ai",
+      "signals": [
+        "rag",
+        "embedding",
+        "vector",
+        "retrieval"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to ai retrieval and knowledge isolation. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Retrieval supplies another tenant's or outdated documents."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Retrieval supplies another tenant's or outdated documents.",
+        "Use synthetic protected data and adversarial untrusted content.",
+        "Observe actual authorization and output boundaries rather than model promises.",
+        "Record uncertainty, provenance and unavailable execution evidence."
+      ],
+      "expectedOutcome": "Retrieval enforces access controls and communicates provenance and freshness.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Filter by authenticated scope before retrieval and validate source lifecycle controls.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Retrieval enforces access controls and communicates provenance and freshness. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V8"
+      ]
+    },
+    {
+      "id": "ARG-100",
+      "number": 100,
+      "title": "MCP tool permissions and response trust",
+      "group": "ai",
+      "signals": [
+        "mcp",
+        "tool",
+        "server",
+        "capability"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to mcp tool permissions and response trust. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "A tool has excessive access or malicious output becomes an instruction."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A tool has excessive access or malicious output becomes an instruction.",
+        "Use synthetic protected data and adversarial untrusted content.",
+        "Observe actual authorization and output boundaries rather than model promises.",
+        "Record uncertainty, provenance and unavailable execution evidence."
+      ],
+      "expectedOutcome": "Tool capabilities remain scoped and responses are treated as untrusted evidence.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Enforce permissions in the host, constrain arguments and never execute returned instructions.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Tool capabilities remain scoped and responses are treated as untrusted evidence. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V8"
+      ]
+    },
+    {
+      "id": "ARG-101",
+      "number": 101,
+      "title": "Feature flags and cross-feature regressions",
+      "group": "ai",
+      "signals": [
+        "featureFlag",
+        "flag",
+        "experiment",
+        "toggle"
+      ],
+      "applicability": "Apply when the inventory contains behavior related to feature flags and cross-feature regressions. Absence of a signal is unknown, not proof of non-applicability.",
+      "prerequisites": [
+        "Confirmed expected behavior and scoped application artifacts",
+        "Synthetic fixtures and an isolated runner for dynamic checks"
+      ],
+      "failureExamples": [
+        "Combining two working features breaks a critical journey."
+      ],
+      "testApproaches": [
+        "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Combining two working features breaks a critical journey.",
+        "Use synthetic protected data and adversarial untrusted content.",
+        "Observe actual authorization and output boundaries rather than model promises.",
+        "Record uncertainty, provenance and unavailable execution evidence."
+      ],
+      "expectedOutcome": "Relevant flag combinations preserve existing required behavior.",
+      "evidenceRequirements": [
+        "Affected feature and location",
+        "Expected versus observed behavior",
+        "Reproduction command or source-trace details",
+        "Evidence type, revision, limitations and sanitized output"
+      ],
+      "remediation": "Test high-risk interactions and rollouts with explicit compatibility assumptions.",
+      "verification": "Reproduce the original failure, apply the correction, and assert: Relevant flag combinations preserve existing required behavior. Include an authorized/valid control case.",
+      "references": [
+        "ASVS-v5.0.0/V15"
+      ]
+    }
+  ]
+}

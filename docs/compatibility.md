@@ -4,7 +4,11 @@ Release: **Argus 0.1.0-draft**. Runtime tested: **Node 22.23.1**, MCP TypeScript
 
 **Tested** means executed here. **Documented but untested** means an official host interface is documented, but this Argus release was not connected to that host. **Unsupported** means this draft provides no verified integration path for that surface. The universal fallback is to give a file-reading agent `SKILL.md` and use the CLI if a local Node runtime is available.
 
-## Shared setup
+## Skill-only installation
+
+Run `npx skills add https://github.com/s1reyash/argus/tree/main/skills/argus` and select a supported host. Only the standalone skill folder is installed. No engine build is required. For manual installation, copy `skills/argus`, not the repository root. The recipes below configure the optional MCP engine separately.
+
+## Shared MCP engine setup
 
 Build the package first with `npm ci --ignore-scripts` and `npm run build`. Use an absolute Node executable if the GUI cannot find Node. Every host starts the same process:
 

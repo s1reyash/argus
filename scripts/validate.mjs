@@ -4,6 +4,12 @@ import {catalog} from '../dist/catalog.js';
 import {loadConfig} from '../dist/config.js';
 const root=path.resolve(import.meta.dirname,'..');
 const errors=[];
+for (const name of ['catalog.json','catalog.md','sources.json']) {
+  const canonical=await fs.readFile(path.join(root,'references',name));
+  const standalone=await fs.readFile(path.join(root,'skills/argus/references',name));
+  if (!canonical.equals(standalone)) errors.push('Standalone skill catalog drift: '+name);
+}
+
 const sources=JSON.parse(await fs.readFile(path.join(root,'references/sources.json'),'utf8')).sources;
 for(const area of catalog)for(const id of area.references)if(!sources.some(s=>s.id===id))errors.push('Unresolved standard reference: '+id);
 if(catalog.length!==101 || new Set(catalog.map(a=>a.id)).size!==101)errors.push('Catalog must have 101 unique areas');

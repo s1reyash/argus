@@ -32,3 +32,7 @@ That review identified affected-suite underreporting, temporarily missing linked
 ## Scope of confidence
 
 This proves the listed invariants in this environment. Docker execution, scanner binaries, browser sessions, native UI workflows and individual coding-host integrations remain documented but untested. The supplied CI templates have not run in GitHub Actions. Passing this package validation is not a full audit of an arbitrary application or an independent security certification.
+
+## Standalone skill packaging — 2026-10-16
+
+Tested `skills@1.7.2 add <local skills/argus path> -a codex -y --copy` in an isolated project with installer telemetry disabled. Discovered and installed exactly one skill. All 10 installed files matched the source; 101 catalog areas and all local skill links verified. No engine, dependencies or fixture files were installed. This verifies packaging, not host model behavior. The Python skill validator was unavailable in this shell because PyYAML was missing; installer discovery and explicit payload checks succeeded.

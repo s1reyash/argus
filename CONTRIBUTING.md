@@ -11,3 +11,7 @@ Adapter changes need exact binary/image versions, redacted sample outputs, known
 Compatibility contributions must record the actual client build, OS, runtime, configuration format and the smoke test in `docs/compatibility.md`. Do not promote a documented integration to tested just because its config parses.
 
 Submit focused changes with the problem, resulting behavior, validation and remaining limitations. Contributions to original Argus code/guidance are MIT licensed; preserve third-party notices. Maintainers should pin CI actions to reviewed commit SHAs when adopting the templates and review dependency/license changes in the lockfile.
+
+## Standalone skill packaging
+
+The installable skill is `skills/argus`. Keep it independent of engine source and runtime dependencies. After editing the canonical catalog under `references/`, run `node scripts/sync-skill.mjs`; `node scripts/sync-skill.mjs --check` and package validation detect drift. Keep standalone instructions and engine instructions consistent without assuming the engine is installed.
