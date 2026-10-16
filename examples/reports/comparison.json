@@ -1,0 +1,29 @@
+{
+  "before": "3467a95f-22c2-46c1-95b9-478709f9aa0e",
+  "after": "828fddb1-db7b-4310-b78e-9c5d1a944fe8",
+  "sameRevision": false,
+  "configurationChanged": false,
+  "new": [],
+  "recurring": [],
+  "resolved": [
+    "scenario-login",
+    "scenario-tenant-isolation",
+    "scenario-field-validation",
+    "scenario-durability",
+    "scenario-chat-dedupe",
+    "scenario-email-state",
+    "scenario-whatsapp-state",
+    "scenario-sms-expiry",
+    "scenario-webhook-auth",
+    "scenario-webhook-order",
+    "scenario-payment-failure",
+    "scenario-duplicate-payment",
+    "scenario-outage-fallback",
+    "scenario-export-feature"
+  ],
+  "noLongerVerified": [
+    "finding-36030b21802d1dad"
+  ],
+  "unverifiedScenarios": [],
+  "note": "Absent static warnings are not treated as proven fixes. Resolution requires a matching passing scenario with unchanged expected behavior and evidence type."
+}

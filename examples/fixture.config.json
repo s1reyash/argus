@@ -1,0 +1,665 @@
+{
+  "schemaVersion": 1,
+  "deliveryMode": "simulation-only",
+  "applicability": {
+    "ARG-001": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-002": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-003": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-004": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-005": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-006": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-007": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-008": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-009": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-010": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-011": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-012": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-013": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-014": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-015": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-016": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-017": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-018": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-019": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-020": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-021": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-022": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-023": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-024": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-025": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-026": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-027": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-028": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-029": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-030": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-031": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-032": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-033": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-034": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-035": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-036": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-037": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-038": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-039": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-040": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-041": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-042": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-043": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-044": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-045": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-046": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-047": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-048": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-049": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-050": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-051": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-052": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-053": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-054": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-055": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-056": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-057": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-058": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-059": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-060": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-061": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-062": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-063": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-064": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-065": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-066": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-067": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-068": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-069": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-070": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-071": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-072": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-073": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-074": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-075": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-076": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-077": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-078": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-079": {
+      "status": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-080": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-081": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-082": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-083": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-084": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-085": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-086": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-087": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-088": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-089": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-090": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-091": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-092": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-093": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-094": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-095": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-096": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-097": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-098": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-099": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-100": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    },
+    "ARG-101": {
+      "status": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application."
+    }
+  },
+  "features": [
+    {
+      "id": "fixture-app",
+      "title": "Synthetic application acceptance behavior",
+      "source": "app.mjs",
+      "areaIds": [
+        "ARG-001",
+        "ARG-012",
+        "ARG-020",
+        "ARG-027",
+        "ARG-029",
+        "ARG-035",
+        "ARG-039",
+        "ARG-063",
+        "ARG-064",
+        "ARG-065",
+        "ARG-067",
+        "ARG-068",
+        "ARG-071",
+        "ARG-072",
+        "ARG-073",
+        "ARG-078",
+        "ARG-079"
+      ],
+      "required": true,
+      "implementation": "present"
+    }
+  ],
+  "runners": [
+    {
+      "id": "fixture",
+      "adapter": "project",
+      "sandbox": "macos-offline-node",
+      "command": [
+        "node",
+        "tests/suite.mjs"
+      ],
+      "timeoutMs": 15000
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "login",
+      "title": "Reject invalid credentials",
+      "areaIds": [
+        "ARG-020"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reject invalid credentials in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture"
+    },
+    {
+      "id": "tenant-isolation",
+      "title": "Deny another tenant and owner",
+      "areaIds": [
+        "ARG-027",
+        "ARG-029"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Deny another tenant and owner in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture"
+    },
+    {
+      "id": "field-validation",
+      "title": "Reject missing required name",
+      "areaIds": [
+        "ARG-035"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reject missing required name in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture"
+    },
+    {
+      "id": "durability",
+      "title": "Reload a persisted value",
+      "areaIds": [
+        "ARG-039"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reload a persisted value in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture"
+    },
+    {
+      "id": "chat-dedupe",
+      "title": "Deduplicate and order chat messages",
+      "areaIds": [
+        "ARG-067",
+        "ARG-068"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Deduplicate and order chat messages in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "email-state",
+      "title": "Keep acceptance distinct from delivery and bounce",
+      "areaIds": [
+        "ARG-072"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Keep acceptance distinct from delivery and bounce in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "whatsapp-state",
+      "title": "Handle rejected WhatsApp templates",
+      "areaIds": [
+        "ARG-071"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Handle rejected WhatsApp templates in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "sms-expiry",
+      "title": "Reject expired simulated OTPs",
+      "areaIds": [
+        "ARG-073"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reject expired simulated OTPs in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "webhook-auth",
+      "title": "Reject forged webhook signature",
+      "areaIds": [
+        "ARG-063"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reject forged webhook signature in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "webhook-order",
+      "title": "Ignore older webhook events",
+      "areaIds": [
+        "ARG-064"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Ignore older webhook events in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "payment-failure",
+      "title": "Deny paid access after failed payment",
+      "areaIds": [
+        "ARG-078"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Deny paid access after failed payment in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "duplicate-payment",
+      "title": "Avoid duplicate simulated charges",
+      "areaIds": [
+        "ARG-079"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Avoid duplicate simulated charges in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "outage-fallback",
+      "title": "Return explicit failure during provider outage",
+      "areaIds": [
+        "ARG-065"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Return explicit failure during provider outage in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture"
+    },
+    {
+      "id": "export-feature",
+      "title": "Implement required export function",
+      "areaIds": [
+        "ARG-001",
+        "ARG-012"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Implement required export function in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture"
+    }
+  ]
+}

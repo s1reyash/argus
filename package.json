@@ -1,0 +1,46 @@
+{
+  "name": "argus-app-audit",
+  "version": "0.1.0-draft",
+  "description": "One portable skill for evidence-based application audits across 101 failure areas",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "bin": {
+    "argus": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "references",
+    "agents",
+    "SKILL.md",
+    "README.md",
+    "docs",
+    "examples",
+    "LICENSE",
+    "NOTICE",
+    "src",
+    "scripts",
+    "tests",
+    "ci",
+    "tsconfig.json",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "catalog": "node scripts/catalog-doc.mjs",
+    "validate": "npm run build && node scripts/validate.mjs",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  }
+}

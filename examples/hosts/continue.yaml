@@ -1,0 +1,13 @@
+name: Argus local audit
+version: 0.1.0
+schema: v1
+mcpServers:
+  - name: argus
+    command: node
+    args:
+      - /absolute/argus/dist/cli.js
+      - mcp
+      - --root
+      - /absolute/application
+      - --out
+      - /absolute/audit/reports

@@ -1,0 +1,31 @@
+Argus 0.1.0-draft
+
+Argus code and original workflow/catalog text are distributed under the MIT
+license in LICENSE. The catalog is original project guidance, not a copy of
+an OWASP certification checklist. Topical mappings and references do not imply
+certification, endorsement or complete coverage of a standard.
+
+Referenced works retain their own rights:
+- OWASP Application Security Verification Standard 5.0.0, OWASP Foundation
+  and contributors. CC BY-SA 4.0. https://github.com/OWASP/ASVS/tree/v5.0.0
+- OWASP Mobile Application Security Verification Standard 2.1.0, OWASP
+  Foundation and contributors. CC BY-SA 4.0.
+  https://github.com/OWASP/masvs/releases/tag/v2.1.0
+- Site Reliability Engineering, Google and its contributing authors,
+  published by O'Reilly. Referenced by link; book text is not bundled.
+  https://sre.google/sre-book/monitoring-distributed-systems/
+
+Runtime dependencies include the Model Context Protocol TypeScript SDK
+(MIT) and Zod (MIT). Development dependencies include TypeScript (Apache-2.0)
+and @types/node (MIT). package-lock.json records exact dependency versions.
+Installed dependencies include their upstream licenses; node_modules is not
+bundled in the source ZIP. Do not relicense upstream dependency files.
+
+Gitleaks, Semgrep Community Edition, OSV-Scanner and Playwright are optional,
+separately installed tools, not bundled binaries. Their current licenses,
+container images, vulnerability databases and any proprietary rules are
+separate from Argus's MIT grant. Review those terms when distributing images.
+
+Named coding tools and provider brands belong to their respective owners.
+No endorsement, ownership of those marks, or exclusivity of the name Argus
+is asserted. Synthetic fixtures contain no valid provider credentials.

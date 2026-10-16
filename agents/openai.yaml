@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argus"
+  short_description: "Audit app behavior, security, and 101 failure areas"
+  default_prompt: "Use $argus to audit this application's features, security gaps, missing requirements, and readiness with evidence and prioritized fixes."

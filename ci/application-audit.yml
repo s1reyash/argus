@@ -1,0 +1,43 @@
+name: Argus application audit
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 1'
+permissions:
+  contents: read
+jobs:
+  audit:
+    # A disposable runner image must supply the reviewed engine/config and images.
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      ARGUS_CLI: ${{ vars.ARGUS_CLI }}
+      ARGUS_CONFIG: ${{ vars.ARGUS_CONFIG }}
+      ARGUS_AFFECTED_SCENARIOS: ${{ vars.ARGUS_AFFECTED_SCENARIOS }}
+      ARGUS_EVENT: ${{ github.event_name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify reviewed prerequisites and gate current revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f "$ARGUS_CLI"
+          test -f "$ARGUS_CONFIG"
+          args=(run --root "$GITHUB_WORKSPACE" --config "$ARGUS_CONFIG" --out "$RUNNER_TEMP/argus-reports" --execute)
+          if [[ "$ARGUS_EVENT" == "pull_request" && -n "$ARGUS_AFFECTED_SCENARIOS" ]]; then
+            args+=(--profile affected --scenarios "$ARGUS_AFFECTED_SCENARIOS")
+          fi
+          node "$ARGUS_CLI" "${args[@]}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: argus-reports
+          path: ${{ runner.temp }}/argus-reports
+          retention-days: 7
+          if-no-files-found: warn

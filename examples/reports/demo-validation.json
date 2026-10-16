@@ -1,0 +1,9 @@
+{
+  "argus": "0.1.0-draft",
+  "node": "22.23.1",
+  "platform": "darwin",
+  "vulnerableFailed": 14,
+  "correctedPassed": 14,
+  "realExternalDelivery": "unverified",
+  "resolved": 14
+}

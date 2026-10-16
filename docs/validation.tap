@@ -1,0 +1,168 @@
+
+> argus-app-audit@0.1.0-draft test
+> npm run build && node --test tests/*.test.mjs
+
+
+> argus-app-audit@0.1.0-draft build
+> tsc
+
+TAP version 13
+# Subtest: catalog has exactly 101 stable, actionable entries
+ok 1 - catalog has exactly 101 stable, actionable entries
+  ---
+  duration_ms: 2.681209
+  type: 'test'
+  ...
+# Subtest: configuration rejects live delivery, unknown areas and arbitrary schema additions
+ok 2 - configuration rejects live delivery, unknown areas and arbitrary schema additions
+  ---
+  duration_ms: 4.272875
+  type: 'test'
+  ...
+# Subtest: configuration rejects missing runner references and false observed delivery claims
+ok 3 - configuration rejects missing runner references and false observed delivery claims
+  ---
+  duration_ms: 2.3205
+  type: 'test'
+  ...
+# Subtest: configuration requires evidence for missing requirements and coherent exclusions
+ok 4 - configuration requires evidence for missing requirements and coherent exclusions
+  ---
+  duration_ms: 0.5245
+  type: 'test'
+  ...
+# Subtest: redaction removes credentials from strings, nested fields and structured data
+ok 5 - redaction removes credentials from strings, nested fields and structured data
+  ---
+  duration_ms: 2.169166
+  type: 'test'
+  ...
+# Subtest: inspection does not execute package lifecycle scripts and excludes symlinks and secret files
+ok 6 - inspection does not execute package lifecycle scripts and excludes symlinks and secret files
+  ---
+  duration_ms: 56.797625
+  type: 'test'
+  ...
+# Subtest: snapshot omits provider credentials, links and dependencies
+ok 7 - snapshot omits provider credentials, links and dependencies
+  ---
+  duration_ms: 7.999
+  type: 'test'
+  ...
+# Subtest: source pattern evidence is a redacted hypothesis and cannot be excluded silently
+ok 8 - source pattern evidence is a redacted hypothesis and cannot be excluded silently
+  ---
+  duration_ms: 18.660625
+  type: 'test'
+  ...
+# Subtest: missing requirement is reported separately with supplied evidence
+ok 9 - missing requirement is reported separately with supplied evidence
+  ---
+  duration_ms: 20.46625
+  type: 'test'
+  ...
+# Subtest: zero execution cannot become a passing audit
+ok 10 - zero execution cannot become a passing audit
+  ---
+  duration_ms: 73.597459
+  type: 'test'
+  ...
+# Subtest: engine restricts output placement and run identifiers
+ok 11 - engine restricts output placement and run identifiers
+  ---
+  duration_ms: 5.531833
+  type: 'test'
+  ...
+# Subtest: concurrent start cannot bypass the single-run limit
+ok 12 - concurrent start cannot bypass the single-run limit
+  ---
+  duration_ms: 64.49175
+  type: 'test'
+  ...
+# Subtest: affected profile requires explicit known scenarios and full cannot omit cases
+ok 13 - affected profile requires explicit known scenarios and full cannot omit cases
+  ---
+  duration_ms: 3.119291
+  type: 'test'
+  ...
+# Subtest: project parser refuses duplicate/missing/fabricated status results
+ok 14 - project parser refuses duplicate/missing/fabricated status results
+  ---
+  duration_ms: 0.712083
+  type: 'test'
+  ...
+# Subtest: exit zero alone and inconsistent nonzero exits cannot certify a pass
+ok 15 - exit zero alone and inconsistent nonzero exits cannot certify a pass
+  ---
+  duration_ms: 0.15375
+  type: 'test'
+  ...
+# Subtest: malicious output is retained as data and redacted, never executed
+ok 16 - malicious output is retained as data and redacted, never executed
+  ---
+  duration_ms: 0.127792
+  type: 'test'
+  ...
+# Subtest: Playwright skipped, flaky and unmatched tests are not passing
+ok 17 - Playwright skipped, flaky and unmatched tests are not passing
+  ---
+  duration_ms: 0.426625
+  type: 'test'
+  ...
+# Subtest: scanner result adapters distinguish clean, findings and errors
+ok 18 - scanner result adapters distinguish clean, findings and errors
+  ---
+  duration_ms: 0.673708
+  type: 'test'
+  ...
+# Subtest: vulnerable fixture fails and corrected fixture passes the same 14 acceptance assertions
+ok 19 - vulnerable fixture fails and corrected fixture passes the same 14 acceptance assertions
+  ---
+  duration_ms: 603.776458
+  type: 'test'
+  ...
+# Subtest: offline Node sandbox denies network, unrelated reads, source writes and child processes
+ok 20 - offline Node sandbox denies network, unrelated reads, source writes and child processes
+  ---
+  duration_ms: 594.780666
+  type: 'test'
+  ...
+# Subtest: timeout and cancellation terminate isolated work without a pass
+ok 21 - timeout and cancellation terminate isolated work without a pass
+  ---
+  duration_ms: 417.6245
+  type: 'test'
+  ...
+# Subtest: unavailable sandbox produces blocked results
+ok 22 - unavailable sandbox produces blocked results # SKIP
+  ---
+  duration_ms: 0.126708
+  type: 'test'
+  ...
+# Subtest: external harness runs from a disposable copy and participates in fingerprint
+ok 23 - external harness runs from a disposable copy and participates in fingerprint
+  ---
+  duration_ms: 91.761834
+  type: 'test'
+  ...
+# Subtest: shared report directory is rejected without changing its permissions
+ok 24 - shared report directory is rejected without changing its permissions
+  ---
+  duration_ms: 1.581583
+  type: 'test'
+  ...
+# Subtest: stdio MCP negotiates protocol and serves all five scoped tools, catalog and prompt
+ok 25 - stdio MCP negotiates protocol and serves all five scoped tools, catalog and prompt
+  ---
+  duration_ms: 591.561708
+  type: 'test'
+  ...
+1..25
+# tests 25
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 2131.931583

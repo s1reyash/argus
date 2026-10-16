@@ -1,0 +1,17 @@
+{
+  "mcp": {
+    "argus": {
+      "type": "local",
+      "command": [
+        "node",
+        "/absolute/argus/dist/cli.js",
+        "mcp",
+        "--root",
+        "/absolute/application",
+        "--out",
+        "/absolute/audit/reports"
+      ],
+      "enabled": true
+    }
+  }
+}

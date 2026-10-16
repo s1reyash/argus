@@ -1,0 +1,2851 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "0.1.0-draft",
+  "id": "828fddb1-db7b-4310-b78e-9c5d1a944fe8",
+  "status": "completed",
+  "startedAt": "2026-10-16T10:47:49.290Z",
+  "revision": "c3f24b5032519a4ff1fc59325d38b9e8bdaf922605f3f2dfbbc08e92b7408252",
+  "configHash": "f457fec73aab3a9e3e5addf0913eae5de4d2cac9f7fa33e3c825fedc4b63c429",
+  "profile": "full",
+  "inspection": {
+    "root": "/synthetic-fixture",
+    "revision": "c3f24b5032519a4ff1fc59325d38b9e8bdaf922605f3f2dfbbc08e92b7408252",
+    "filesScanned": 2,
+    "truncated": false,
+    "features": [
+      {
+        "id": "fixture-app",
+        "title": "Synthetic application acceptance behavior",
+        "source": "app.mjs",
+        "areaIds": [
+          "ARG-001",
+          "ARG-012",
+          "ARG-020",
+          "ARG-027",
+          "ARG-029",
+          "ARG-035",
+          "ARG-039",
+          "ARG-063",
+          "ARG-064",
+          "ARG-065",
+          "ARG-067",
+          "ARG-068",
+          "ARG-071",
+          "ARG-072",
+          "ARG-073",
+          "ARG-078",
+          "ARG-079"
+        ],
+        "required": true,
+        "implementation": "present",
+        "evidence": "",
+        "origin": "declared"
+      }
+    ],
+    "areas": [
+      {
+        "id": "ARG-001",
+        "title": "Feature completeness",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "export-feature"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-002",
+        "title": "Complete user journeys",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-003",
+        "title": "Startup and configuration",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-004",
+        "title": "URLs and routing",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-005",
+        "title": "Buttons, navigation, and commands",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-006",
+        "title": "Forms and input validation",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-007",
+        "title": "Loading, empty, and success states",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-008",
+        "title": "Error recovery and user progress",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-009",
+        "title": "Search, filtering, and sorting",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-010",
+        "title": "Pagination and large collections",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-011",
+        "title": "Upload functionality",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-012",
+        "title": "Downloads and exports",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "export-feature"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-013",
+        "title": "Imports and bulk ingestion",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-014",
+        "title": "Reports and business calculations",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-015",
+        "title": "Languages and regional formats",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-016",
+        "title": "Dates, time zones, and calendars",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-017",
+        "title": "Accessibility",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-018",
+        "title": "Browser, screen, and input compatibility",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-019",
+        "title": "Registration and invitations",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-020",
+        "title": "Login correctness",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "login"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-021",
+        "title": "Password handling",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-022",
+        "title": "Account recovery",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-023",
+        "title": "MFA and passkeys",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-024",
+        "title": "OAuth, SSO, and account linking",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-025",
+        "title": "Sessions, cookies, and tokens",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-026",
+        "title": "Logout and access revocation",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-027",
+        "title": "Record-level authorization",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "tenant-isolation"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-028",
+        "title": "Roles and privileged actions",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-029",
+        "title": "Tenant and organization isolation",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "tenant-isolation"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-030",
+        "title": "Authentication abuse defenses",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-031",
+        "title": "Sensitive-data protection",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-032",
+        "title": "Retention, deletion, and privacy lifecycle",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-033",
+        "title": "Secrets and credential exposure",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-034",
+        "title": "Transport and certificate security",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-035",
+        "title": "Missing fields and schema completeness",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "field-validation"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-036",
+        "title": "Data types and value boundaries",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-037",
+        "title": "Empty and insufficient datasets",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-038",
+        "title": "Relationships and referential integrity",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-039",
+        "title": "Persistence and durability",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "durability"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-040",
+        "title": "Transactions and partial writes",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-041",
+        "title": "Concurrent modifications",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-042",
+        "title": "Operation idempotency",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-043",
+        "title": "Numeric precision and units",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-044",
+        "title": "Encoding and serialization",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-045",
+        "title": "Schema migrations",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-046",
+        "title": "Database connectivity and connection pools",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-047",
+        "title": "Database permissions and access policies",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-048",
+        "title": "Query performance",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-049",
+        "title": "Cache correctness and isolation",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-050",
+        "title": "Backup and restoration",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-051",
+        "title": "API contracts and version compatibility",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-052",
+        "title": "API error semantics",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-053",
+        "title": "API quotas and resource abuse",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-054",
+        "title": "SQL and NoSQL injection",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-055",
+        "title": "Command and template injection",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-056",
+        "title": "Cross-site scripting",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-057",
+        "title": "Cross-site request forgery",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-058",
+        "title": "Cross-origin access rules",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-059",
+        "title": "Server-side request forgery",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-060",
+        "title": "Path traversal and filesystem boundaries",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-061",
+        "title": "Uploaded-content safety",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-062",
+        "title": "Redirects and deep-link validation",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-063",
+        "title": "Webhook authenticity",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "webhook-auth"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-064",
+        "title": "Webhook replay and event ordering",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "webhook-order"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-065",
+        "title": "Third-party failures and timeouts",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "outage-fallback"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-066",
+        "title": "Retry and circuit-breaker behavior",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-067",
+        "title": "Chat sending and receiving",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "chat-dedupe"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-068",
+        "title": "Chat history and ordering",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "chat-dedupe"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-069",
+        "title": "Realtime connection lifecycle",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-070",
+        "title": "Chat media and attachments",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-071",
+        "title": "WhatsApp integration",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "whatsapp-state"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-072",
+        "title": "Email integration",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "email-state"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-073",
+        "title": "SMS and OTP delivery workflows",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "sms-expiry"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-074",
+        "title": "Push notifications",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-075",
+        "title": "Message queues and dead-letter handling",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-076",
+        "title": "Notification preferences and consent",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-077",
+        "title": "Checkout prices and totals",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-078",
+        "title": "Payment state transitions",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "payment-failure"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-079",
+        "title": "Duplicate-charge prevention",
+        "applicability": "applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_run",
+        "scenarioIds": [
+          "duplicate-payment"
+        ],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-080",
+        "title": "Refunds and cancellations",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-081",
+        "title": "Subscription lifecycle",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-082",
+        "title": "Payment reconciliation",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-083",
+        "title": "Inventory and reservations",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-084",
+        "title": "Business rules and workflow transitions",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-085",
+        "title": "Dependencies and supply-chain exposure",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-086",
+        "title": "Builds and deployment configuration",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-087",
+        "title": "Release and rollback compatibility",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-088",
+        "title": "Load and capacity",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-089",
+        "title": "Resource exhaustion and leaks",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-090",
+        "title": "Health checks, logs, metrics, and alerts",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-091",
+        "title": "Scheduled and background jobs",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-092",
+        "title": "Shutdown and crash recovery",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-093",
+        "title": "Offline synchronization and conflicts",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-094",
+        "title": "Mobile permissions and local storage",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-095",
+        "title": "Desktop IPC and native privileges",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-096",
+        "title": "Installation, signing, and updates",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-097",
+        "title": "AI output handling and fallback",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-098",
+        "title": "AI prompt injection",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-099",
+        "title": "AI retrieval and knowledge isolation",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-100",
+        "title": "MCP tool permissions and response trust",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      },
+      {
+        "id": "ARG-101",
+        "title": "Feature flags and cross-feature regressions",
+        "applicability": "not_applicable",
+        "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+        "outcome": "not_applicable",
+        "scenarioIds": [],
+        "evidenceTypes": []
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "login",
+        "title": "Reject invalid credentials",
+        "areaIds": [
+          "ARG-020"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Reject invalid credentials in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "observed",
+        "runner": "fixture"
+      },
+      {
+        "id": "tenant-isolation",
+        "title": "Deny another tenant and owner",
+        "areaIds": [
+          "ARG-027",
+          "ARG-029"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Deny another tenant and owner in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "observed",
+        "runner": "fixture"
+      },
+      {
+        "id": "field-validation",
+        "title": "Reject missing required name",
+        "areaIds": [
+          "ARG-035"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Reject missing required name in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "observed",
+        "runner": "fixture"
+      },
+      {
+        "id": "durability",
+        "title": "Reload a persisted value",
+        "areaIds": [
+          "ARG-039"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Reload a persisted value in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "observed",
+        "runner": "fixture"
+      },
+      {
+        "id": "chat-dedupe",
+        "title": "Deduplicate and order chat messages",
+        "areaIds": [
+          "ARG-067",
+          "ARG-068"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Deduplicate and order chat messages in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "email-state",
+        "title": "Keep acceptance distinct from delivery and bounce",
+        "areaIds": [
+          "ARG-072"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Keep acceptance distinct from delivery and bounce in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "whatsapp-state",
+        "title": "Handle rejected WhatsApp templates",
+        "areaIds": [
+          "ARG-071"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Handle rejected WhatsApp templates in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "sms-expiry",
+        "title": "Reject expired simulated OTPs",
+        "areaIds": [
+          "ARG-073"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Reject expired simulated OTPs in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "webhook-auth",
+        "title": "Reject forged webhook signature",
+        "areaIds": [
+          "ARG-063"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Reject forged webhook signature in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "webhook-order",
+        "title": "Ignore older webhook events",
+        "areaIds": [
+          "ARG-064"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Ignore older webhook events in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "payment-failure",
+        "title": "Deny paid access after failed payment",
+        "areaIds": [
+          "ARG-078"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Deny paid access after failed payment in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "duplicate-payment",
+        "title": "Avoid duplicate simulated charges",
+        "areaIds": [
+          "ARG-079"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Avoid duplicate simulated charges in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "outage-fallback",
+        "title": "Return explicit failure during provider outage",
+        "areaIds": [
+          "ARG-065"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Return explicit failure during provider outage in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "simulated",
+        "runner": "fixture"
+      },
+      {
+        "id": "export-feature",
+        "title": "Implement required export function",
+        "areaIds": [
+          "ARG-001",
+          "ARG-012"
+        ],
+        "featureIds": [
+          "fixture-app"
+        ],
+        "expected": "Implement required export function in the isolated synthetic fixture.",
+        "required": true,
+        "severity": "high",
+        "evidenceType": "observed",
+        "runner": "fixture"
+      }
+    ],
+    "proposedScenarios": [
+      {
+        "id": "proposal-ARG-001",
+        "areaId": "ARG-001",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "A promised export or account-management feature is absent or a placeholder.",
+        "expected": "Every confirmed requirement maps to implemented behavior or a reported gap.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A promised export or account-management feature is absent or a placeholder.",
+          "Trace the documented behavior from entrypoint to persisted effect.",
+          "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+          "Compare actual UI/API effects to independently specified acceptance criteria."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks"
+        ]
+      },
+      {
+        "id": "proposal-ARG-012",
+        "areaId": "ARG-012",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "Exports are corrupt, incomplete or contain the wrong records.",
+        "expected": "Exported content is valid, complete and authorized for the requesting user.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Exports are corrupt, incomplete or contain the wrong records.",
+          "Trace the documented behavior from entrypoint to persisted effect.",
+          "Exercise success, invalid input and interrupted/retry paths with synthetic fixtures.",
+          "Compare actual UI/API effects to independently specified acceptance criteria."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks"
+        ]
+      },
+      {
+        "id": "proposal-ARG-020",
+        "areaId": "ARG-020",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "Incorrect credentials grant access or valid users are rejected.",
+        "expected": "Valid identities succeed and invalid credentials fail without revealing sensitive details.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Incorrect credentials grant access or valid users are rejected.",
+          "Use distinct synthetic identities, roles and tenants.",
+          "Exercise both the supported flow and direct access to the protected operation.",
+          "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks"
+        ]
+      },
+      {
+        "id": "proposal-ARG-027",
+        "areaId": "ARG-027",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "Changing an ID exposes another user's record.",
+        "expected": "Every record operation verifies the current actor's rights.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Changing an ID exposes another user's record.",
+          "Use distinct synthetic identities, roles and tenants.",
+          "Exercise both the supported flow and direct access to the protected operation.",
+          "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks"
+        ]
+      },
+      {
+        "id": "proposal-ARG-029",
+        "areaId": "ARG-029",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "An export exposes another organization's data.",
+        "expected": "All data paths bind to the active authorized tenant.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An export exposes another organization's data.",
+          "Use distinct synthetic identities, roles and tenants.",
+          "Exercise both the supported flow and direct access to the protected operation.",
+          "Verify negative cases fail without exposing secrets and authorized cases still succeed."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks"
+        ]
+      },
+      {
+        "id": "proposal-ARG-035",
+        "areaId": "ARG-035",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "Missing required fields or unexpected nulls crash a workflow.",
+        "expected": "Absent, null and present values have explicit validated behavior.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Missing required fields or unexpected nulls crash a workflow.",
+          "Use absent, null, malformed, boundary and representative datasets.",
+          "Inject a controlled failure or concurrent operation in an isolated fixture.",
+          "Verify state and invariants after completion, restart or rollback."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks"
+        ]
+      },
+      {
+        "id": "proposal-ARG-039",
+        "areaId": "ARG-039",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "A saved change disappears after restart.",
+        "expected": "Acknowledged writes survive the promised restart or failure boundary.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A saved change disappears after restart.",
+          "Use absent, null, malformed, boundary and representative datasets.",
+          "Inject a controlled failure or concurrent operation in an isolated fixture.",
+          "Verify state and invariants after completion, restart or rollback."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks"
+        ]
+      },
+      {
+        "id": "proposal-ARG-063",
+        "areaId": "ARG-063",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "A forged callback changes account or payment status.",
+        "expected": "Callbacks are authenticated before any state change.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A forged callback changes account or payment status.",
+          "Trace attacker-controlled input across the trust boundary.",
+          "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+          "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-064",
+        "areaId": "ARG-064",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "An old or duplicate event overwrites a newer state.",
+        "expected": "Duplicate and out-of-order events preserve valid state transitions.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: An old or duplicate event overwrites a newer state.",
+          "Trace attacker-controlled input across the trust boundary.",
+          "Use harmless sentinel payloads in an isolated fixture to test the invariant.",
+          "Record exploit prerequisites and corroborating evidence; static matches are hypotheses."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-065",
+        "areaId": "ARG-065",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "One unavailable provider blocks unrelated functions.",
+        "expected": "Provider failures terminate within bounded time and degrade only intended features.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: One unavailable provider blocks unrelated functions.",
+          "Replace external providers with local fixtures; deny all external delivery.",
+          "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+          "Assert persisted state and visible feedback; real delivery remains unverified."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-067",
+        "areaId": "ARG-067",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "A message appears sent but never reaches the other test user.",
+        "expected": "Authorized isolated test users exchange messages with accurate state.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A message appears sent but never reaches the other test user.",
+          "Replace external providers with local fixtures; deny all external delivery.",
+          "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+          "Assert persisted state and visible feedback; real delivery remains unverified."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-068",
+        "areaId": "ARG-068",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "Reconnect loses history or duplicates messages.",
+        "expected": "History and sequence remain consistent through reconnect and pagination.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Reconnect loses history or duplicates messages.",
+          "Replace external providers with local fixtures; deny all external delivery.",
+          "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+          "Assert persisted state and visible feedback; real delivery remains unverified."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-071",
+        "areaId": "ARG-071",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "A simulated template rejection is displayed as delivered.",
+        "expected": "Provider simulations produce correct WhatsApp workflow state and failure feedback.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A simulated template rejection is displayed as delivered.",
+          "Replace external providers with local fixtures; deny all external delivery.",
+          "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+          "Assert persisted state and visible feedback; real delivery remains unverified."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-072",
+        "areaId": "ARG-072",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "A simulated bounce is marked delivered.",
+        "expected": "Email queues and simulated provider events produce accurate application state.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A simulated bounce is marked delivered.",
+          "Replace external providers with local fixtures; deny all external delivery.",
+          "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+          "Assert persisted state and visible feedback; real delivery remains unverified."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-073",
+        "areaId": "ARG-073",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "A delayed simulated OTP remains usable after expiry.",
+        "expected": "Delivery retries do not extend or conflict with authentication token validity.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A delayed simulated OTP remains usable after expiry.",
+          "Replace external providers with local fixtures; deny all external delivery.",
+          "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+          "Assert persisted state and visible feedback; real delivery remains unverified."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-078",
+        "areaId": "ARG-078",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "A failed simulated payment grants access.",
+        "expected": "Only valid authoritative payment transitions grant entitlements.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: A failed simulated payment grants access.",
+          "Replace external providers with local fixtures; deny all external delivery.",
+          "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+          "Assert persisted state and visible feedback; real delivery remains unverified."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      },
+      {
+        "id": "proposal-ARG-079",
+        "areaId": "ARG-079",
+        "featureIds": [
+          "fixture-app"
+        ],
+        "target": "app.mjs",
+        "failureExample": "Timeout retries create two simulated charges.",
+        "expected": "Repeated attempts produce at most the intended charge.",
+        "steps": [
+          "Create an application-specific reproduction of this failure using the mapped feature and an independent expected result: Timeout retries create two simulated charges.",
+          "Replace external providers with local fixtures; deny all external delivery.",
+          "Replay accepted, failed, delayed, duplicate and out-of-order events as applicable.",
+          "Assert persisted state and visible feedback; real delivery remains unverified."
+        ],
+        "prerequisites": [
+          "Confirmed expected behavior and scoped application artifacts",
+          "Synthetic fixtures and an isolated runner for dynamic checks",
+          "A simulated provider; external delivery must remain blocked"
+        ]
+      }
+    ],
+    "findings": [],
+    "limitations": [
+      "Discovery uses bounded source and documentation signals, not complete semantic analysis. Confirm requirements and expand candidate modules into user journeys.",
+      "Ignored: secrets files, symlinks, dependencies, Git history, generated builds and binary artifacts. Inspect those separately when in scope.",
+      "No credential, provider or production connection is attempted. Real delivery remains unverified."
+    ],
+    "capabilities": {
+      "node": "22.23.1",
+      "platform": "darwin",
+      "executionEnabled": true,
+      "sandbox": "macOS offline Node or Docker required",
+      "runners": [
+        "fixture"
+      ]
+    }
+  },
+  "results": [
+    {
+      "id": "login",
+      "title": "Reject invalid credentials",
+      "areaIds": [
+        "ARG-020"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reject invalid credentials in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for login",
+      "durationMs": 81
+    },
+    {
+      "id": "tenant-isolation",
+      "title": "Deny another tenant and owner",
+      "areaIds": [
+        "ARG-027",
+        "ARG-029"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Deny another tenant and owner in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for tenant-isolation",
+      "durationMs": 81
+    },
+    {
+      "id": "field-validation",
+      "title": "Reject missing required name",
+      "areaIds": [
+        "ARG-035"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reject missing required name in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for field-validation",
+      "durationMs": 81
+    },
+    {
+      "id": "durability",
+      "title": "Reload a persisted value",
+      "areaIds": [
+        "ARG-039"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reload a persisted value in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for durability",
+      "durationMs": 81
+    },
+    {
+      "id": "chat-dedupe",
+      "title": "Deduplicate and order chat messages",
+      "areaIds": [
+        "ARG-067",
+        "ARG-068"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Deduplicate and order chat messages in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for chat-dedupe",
+      "durationMs": 81
+    },
+    {
+      "id": "email-state",
+      "title": "Keep acceptance distinct from delivery and bounce",
+      "areaIds": [
+        "ARG-072"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Keep acceptance distinct from delivery and bounce in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for email-state",
+      "durationMs": 81
+    },
+    {
+      "id": "whatsapp-state",
+      "title": "Handle rejected WhatsApp templates",
+      "areaIds": [
+        "ARG-071"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Handle rejected WhatsApp templates in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for whatsapp-state",
+      "durationMs": 81
+    },
+    {
+      "id": "sms-expiry",
+      "title": "Reject expired simulated OTPs",
+      "areaIds": [
+        "ARG-073"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reject expired simulated OTPs in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for sms-expiry",
+      "durationMs": 81
+    },
+    {
+      "id": "webhook-auth",
+      "title": "Reject forged webhook signature",
+      "areaIds": [
+        "ARG-063"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Reject forged webhook signature in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for webhook-auth",
+      "durationMs": 81
+    },
+    {
+      "id": "webhook-order",
+      "title": "Ignore older webhook events",
+      "areaIds": [
+        "ARG-064"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Ignore older webhook events in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for webhook-order",
+      "durationMs": 81
+    },
+    {
+      "id": "payment-failure",
+      "title": "Deny paid access after failed payment",
+      "areaIds": [
+        "ARG-078"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Deny paid access after failed payment in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for payment-failure",
+      "durationMs": 81
+    },
+    {
+      "id": "duplicate-payment",
+      "title": "Avoid duplicate simulated charges",
+      "areaIds": [
+        "ARG-079"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Avoid duplicate simulated charges in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for duplicate-payment",
+      "durationMs": 81
+    },
+    {
+      "id": "outage-fallback",
+      "title": "Return explicit failure during provider outage",
+      "areaIds": [
+        "ARG-065"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Return explicit failure during provider outage in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "simulated",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for outage-fallback",
+      "durationMs": 81
+    },
+    {
+      "id": "export-feature",
+      "title": "Implement required export function",
+      "areaIds": [
+        "ARG-001",
+        "ARG-012"
+      ],
+      "featureIds": [
+        "fixture-app"
+      ],
+      "expected": "Implement required export function in the isolated synthetic fixture.",
+      "required": true,
+      "severity": "high",
+      "evidenceType": "observed",
+      "runner": "fixture",
+      "outcome": "passed",
+      "observed": "Expected acceptance assertion held.",
+      "evidence": "Independent fixture assertions executed for export-feature",
+      "durationMs": 81
+    }
+  ],
+  "findings": [],
+  "areas": [
+    {
+      "id": "ARG-001",
+      "title": "Feature completeness",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "export-feature"
+      ],
+      "evidenceTypes": [
+        "observed"
+      ]
+    },
+    {
+      "id": "ARG-002",
+      "title": "Complete user journeys",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-003",
+      "title": "Startup and configuration",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-004",
+      "title": "URLs and routing",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-005",
+      "title": "Buttons, navigation, and commands",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-006",
+      "title": "Forms and input validation",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-007",
+      "title": "Loading, empty, and success states",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-008",
+      "title": "Error recovery and user progress",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-009",
+      "title": "Search, filtering, and sorting",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-010",
+      "title": "Pagination and large collections",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-011",
+      "title": "Upload functionality",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-012",
+      "title": "Downloads and exports",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "export-feature"
+      ],
+      "evidenceTypes": [
+        "observed"
+      ]
+    },
+    {
+      "id": "ARG-013",
+      "title": "Imports and bulk ingestion",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-014",
+      "title": "Reports and business calculations",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-015",
+      "title": "Languages and regional formats",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-016",
+      "title": "Dates, time zones, and calendars",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-017",
+      "title": "Accessibility",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-018",
+      "title": "Browser, screen, and input compatibility",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-019",
+      "title": "Registration and invitations",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-020",
+      "title": "Login correctness",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "login"
+      ],
+      "evidenceTypes": [
+        "observed"
+      ]
+    },
+    {
+      "id": "ARG-021",
+      "title": "Password handling",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-022",
+      "title": "Account recovery",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-023",
+      "title": "MFA and passkeys",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-024",
+      "title": "OAuth, SSO, and account linking",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-025",
+      "title": "Sessions, cookies, and tokens",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-026",
+      "title": "Logout and access revocation",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-027",
+      "title": "Record-level authorization",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "tenant-isolation"
+      ],
+      "evidenceTypes": [
+        "observed"
+      ]
+    },
+    {
+      "id": "ARG-028",
+      "title": "Roles and privileged actions",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-029",
+      "title": "Tenant and organization isolation",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "tenant-isolation"
+      ],
+      "evidenceTypes": [
+        "observed"
+      ]
+    },
+    {
+      "id": "ARG-030",
+      "title": "Authentication abuse defenses",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-031",
+      "title": "Sensitive-data protection",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-032",
+      "title": "Retention, deletion, and privacy lifecycle",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-033",
+      "title": "Secrets and credential exposure",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-034",
+      "title": "Transport and certificate security",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-035",
+      "title": "Missing fields and schema completeness",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "field-validation"
+      ],
+      "evidenceTypes": [
+        "observed"
+      ]
+    },
+    {
+      "id": "ARG-036",
+      "title": "Data types and value boundaries",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-037",
+      "title": "Empty and insufficient datasets",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-038",
+      "title": "Relationships and referential integrity",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-039",
+      "title": "Persistence and durability",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "durability"
+      ],
+      "evidenceTypes": [
+        "observed"
+      ]
+    },
+    {
+      "id": "ARG-040",
+      "title": "Transactions and partial writes",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-041",
+      "title": "Concurrent modifications",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-042",
+      "title": "Operation idempotency",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-043",
+      "title": "Numeric precision and units",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-044",
+      "title": "Encoding and serialization",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-045",
+      "title": "Schema migrations",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-046",
+      "title": "Database connectivity and connection pools",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-047",
+      "title": "Database permissions and access policies",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-048",
+      "title": "Query performance",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-049",
+      "title": "Cache correctness and isolation",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-050",
+      "title": "Backup and restoration",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-051",
+      "title": "API contracts and version compatibility",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-052",
+      "title": "API error semantics",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-053",
+      "title": "API quotas and resource abuse",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-054",
+      "title": "SQL and NoSQL injection",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-055",
+      "title": "Command and template injection",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-056",
+      "title": "Cross-site scripting",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-057",
+      "title": "Cross-site request forgery",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-058",
+      "title": "Cross-origin access rules",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-059",
+      "title": "Server-side request forgery",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-060",
+      "title": "Path traversal and filesystem boundaries",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-061",
+      "title": "Uploaded-content safety",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-062",
+      "title": "Redirects and deep-link validation",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-063",
+      "title": "Webhook authenticity",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "webhook-auth"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-064",
+      "title": "Webhook replay and event ordering",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "webhook-order"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-065",
+      "title": "Third-party failures and timeouts",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "outage-fallback"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-066",
+      "title": "Retry and circuit-breaker behavior",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-067",
+      "title": "Chat sending and receiving",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "chat-dedupe"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-068",
+      "title": "Chat history and ordering",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "chat-dedupe"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-069",
+      "title": "Realtime connection lifecycle",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-070",
+      "title": "Chat media and attachments",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-071",
+      "title": "WhatsApp integration",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "whatsapp-state"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-072",
+      "title": "Email integration",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "email-state"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-073",
+      "title": "SMS and OTP delivery workflows",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "sms-expiry"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-074",
+      "title": "Push notifications",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-075",
+      "title": "Message queues and dead-letter handling",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-076",
+      "title": "Notification preferences and consent",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-077",
+      "title": "Checkout prices and totals",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-078",
+      "title": "Payment state transitions",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "payment-failure"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-079",
+      "title": "Duplicate-charge prevention",
+      "applicability": "applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "passed",
+      "scenarioIds": [
+        "duplicate-payment"
+      ],
+      "evidenceTypes": [
+        "simulated"
+      ]
+    },
+    {
+      "id": "ARG-080",
+      "title": "Refunds and cancellations",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-081",
+      "title": "Subscription lifecycle",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-082",
+      "title": "Payment reconciliation",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-083",
+      "title": "Inventory and reservations",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-084",
+      "title": "Business rules and workflow transitions",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-085",
+      "title": "Dependencies and supply-chain exposure",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-086",
+      "title": "Builds and deployment configuration",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-087",
+      "title": "Release and rollback compatibility",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-088",
+      "title": "Load and capacity",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-089",
+      "title": "Resource exhaustion and leaks",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-090",
+      "title": "Health checks, logs, metrics, and alerts",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-091",
+      "title": "Scheduled and background jobs",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-092",
+      "title": "Shutdown and crash recovery",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-093",
+      "title": "Offline synchronization and conflicts",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-094",
+      "title": "Mobile permissions and local storage",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-095",
+      "title": "Desktop IPC and native privileges",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-096",
+      "title": "Installation, signing, and updates",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-097",
+      "title": "AI output handling and fallback",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-098",
+      "title": "AI prompt injection",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-099",
+      "title": "AI retrieval and knowledge isolation",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-100",
+      "title": "MCP tool permissions and response trust",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    },
+    {
+      "id": "ARG-101",
+      "title": "Feature flags and cross-feature regressions",
+      "applicability": "not_applicable",
+      "reason": "This is a deliberately tiny synthetic fixture. Its explicit acceptance scope is limited to the mapped fixture behaviors, not a production application.",
+      "outcome": "not_applicable",
+      "scenarioIds": [],
+      "evidenceTypes": []
+    }
+  ],
+  "readiness": "meets_configured_checks",
+  "realExternalDelivery": "unverified",
+  "errors": [],
+  "featureCoverage": [
+    {
+      "featureId": "fixture-app",
+      "scenarioIds": [
+        "login",
+        "tenant-isolation",
+        "field-validation",
+        "durability",
+        "chat-dedupe",
+        "email-state",
+        "whatsapp-state",
+        "sms-expiry",
+        "webhook-auth",
+        "webhook-order",
+        "payment-failure",
+        "duplicate-payment",
+        "outage-fallback",
+        "export-feature"
+      ],
+      "verificationGap": null
+    }
+  ],
+  "prioritizedFixes": [],
+  "finishedAt": "2026-10-16T10:47:49.392Z"
+}

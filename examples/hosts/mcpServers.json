@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "argus": {
+      "command": "node",
+      "args": [
+        "/absolute/argus/dist/cli.js",
+        "mcp",
+        "--root",
+        "/absolute/application",
+        "--out",
+        "/absolute/audit/reports"
+      ]
+    }
+  }
+}

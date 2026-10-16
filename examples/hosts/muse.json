@@ -1,0 +1,18 @@
+{
+  "mcp_servers": {
+    "argus": {
+      "transport": "stdio",
+      "command": "node",
+      "args": [
+        "/absolute/argus/dist/cli.js",
+        "mcp",
+        "--root",
+        "/absolute/application",
+        "--out",
+        "/absolute/audit/reports"
+      ],
+      "enabled": true,
+      "mode": "optional"
+    }
+  }
+}
